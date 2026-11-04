@@ -1,0 +1,152 @@
+check,passed
+One CSV inside regular_season_results.csv.zip,True
+One CSV inside box_scores.csv.zip,True
+teams: key values present,True
+teams: key unique after exact deduplication,True
+conferences: key values present,True
+conferences: key unique after exact deduplication,True
+team_conferences: key values present,True
+team_conferences: key unique after exact deduplication,True
+seasons: key values present,True
+seasons: key unique after exact deduplication,True
+regular_season_results: key values present,True
+regular_season_results: key unique after exact deduplication,True
+box_scores: key values present,True
+box_scores: key unique after exact deduplication,True
+conference_tourney_games: key values present,True
+conference_tourney_games: key unique after exact deduplication,True
+tournament_seeds: key values present,True
+tournament_seeds: key unique after exact deduplication,True
+tournament_results: key values present,True
+tournament_results: key unique after exact deduplication,True
+team_strength_preseason: key values present,True
+team_strength_preseason: key unique after exact deduplication,True
+teams.team_id: valid team references,True
+conferences: valid conference references,True
+team_conferences.team_id: valid team references,True
+team_conferences: valid season references,True
+team_conferences: valid conference references,True
+seasons: valid season references,True
+regular_season_results.w_team_id: valid team references,True
+regular_season_results.l_team_id: valid team references,True
+regular_season_results: valid season references,True
+box_scores.team_id: valid team references,True
+box_scores.opp_team_id: valid team references,True
+box_scores: valid season references,True
+conference_tourney_games.w_team_id: valid team references,True
+conference_tourney_games.l_team_id: valid team references,True
+conference_tourney_games: valid season references,True
+conference_tourney_games: valid conference references,True
+tournament_seeds.team_id: valid team references,True
+tournament_seeds: valid season references,True
+tournament_results.w_team_id: valid team references,True
+tournament_results.l_team_id: valid team references,True
+tournament_results: valid season references,True
+team_strength_preseason.team_id: valid team references,True
+team_strength_preseason: valid season references,True
+Ratings and conference memberships cover the same team-seasons,True
+regular_season_results: no self matches,True
+regular_season_results: source location labels are H/A/N,True
+regular_season_results: w_team_id has season membership,True
+regular_season_results: l_team_id has season membership,True
+regular_season_results: team plays at most once per day,True
+tournament_results: no self matches,True
+tournament_results: source location labels are H/A/N,True
+tournament_results: w_team_id has season membership,True
+tournament_results: l_team_id has season membership,True
+tournament_results: team plays at most once per day,True
+No membership before entry or after departure,True
+Regular results use days 0 to 132,True
+National tournament locations are neutral,True
+National tournament winner scores exceed loser scores,True
+Exactly one Team A and Team C,True
+teams: key values present,True
+teams: key unique after exact deduplication,True
+conferences: key values present,True
+conferences: key unique after exact deduplication,True
+team_conferences: key values present,True
+team_conferences: key unique after exact deduplication,True
+seasons: key values present,True
+seasons: key unique after exact deduplication,True
+regular_season_results: key values present,True
+regular_season_results: key unique after exact deduplication,True
+box_scores: key values present,True
+box_scores: key unique after exact deduplication,True
+conference_tourney_games: key values present,True
+conference_tourney_games: key unique after exact deduplication,True
+tournament_seeds: key values present,True
+tournament_seeds: key unique after exact deduplication,True
+tournament_results: key values present,True
+tournament_results: key unique after exact deduplication,True
+team_strength_preseason: key values present,True
+team_strength_preseason: key unique after exact deduplication,True
+teams.team_id: valid team references,True
+conferences: valid conference references,True
+team_conferences.team_id: valid team references,True
+team_conferences: valid season references,True
+team_conferences: valid conference references,True
+seasons: valid season references,True
+regular_season_results.w_team_id: valid team references,True
+regular_season_results.l_team_id: valid team references,True
+regular_season_results: valid season references,True
+box_scores.team_id: valid team references,True
+box_scores.opp_team_id: valid team references,True
+box_scores: valid season references,True
+conference_tourney_games.w_team_id: valid team references,True
+conference_tourney_games.l_team_id: valid team references,True
+conference_tourney_games: valid season references,True
+conference_tourney_games: valid conference references,True
+tournament_seeds.team_id: valid team references,True
+tournament_seeds: valid season references,True
+tournament_results.w_team_id: valid team references,True
+tournament_results.l_team_id: valid team references,True
+tournament_results: valid season references,True
+team_strength_preseason.team_id: valid team references,True
+team_strength_preseason: valid season references,True
+Ratings and conference memberships cover the same team-seasons,True
+regular_season_results: no self matches,True
+regular_season_results: source location labels are H/A/N,True
+regular_season_results: w_team_id has season membership,True
+regular_season_results: l_team_id has season membership,True
+regular_season_results: team plays at most once per day,True
+tournament_results: no self matches,True
+tournament_results: source location labels are H/A/N,True
+tournament_results: w_team_id has season membership,True
+tournament_results: l_team_id has season membership,True
+tournament_results: team plays at most once per day,True
+No membership before entry or after departure,True
+Regular results use days 0 to 132,True
+National tournament locations are neutral,True
+National tournament winner scores exceed loser scores,True
+Exactly one Team A and Team C,True
+Two box-score rows per unique game,True
+Both box scores match every results game,True
+Every score mismatch is a verified reversal,True
+All corrected result scores agree with box scores,True
+All regular winners score more than losers,True
+Three-point makes do not exceed attempts,True
+Three-point makes do not exceed all field-goal makes,True
+Free-throw makes do not exceed attempts,True
+Only the known 2019 season has missing result locations,True
+Every conference tournament game appears in main results,True
+Every row removal is explained by exact deduplication,True
+teams: exported row count matches,True
+teams: exported missing-value counts match,True
+conferences: exported row count matches,True
+conferences: exported missing-value counts match,True
+team_conferences: exported row count matches,True
+team_conferences: exported missing-value counts match,True
+seasons: exported row count matches,True
+seasons: exported missing-value counts match,True
+regular_season_results: exported row count matches,True
+regular_season_results: exported missing-value counts match,True
+box_scores: exported row count matches,True
+box_scores: exported missing-value counts match,True
+conference_tourney_games: exported row count matches,True
+conference_tourney_games: exported missing-value counts match,True
+tournament_seeds: exported row count matches,True
+tournament_seeds: exported missing-value counts match,True
+tournament_results: exported row count matches,True
+tournament_results: exported missing-value counts match,True
+team_strength_preseason: exported row count matches,True
+team_strength_preseason: exported missing-value counts match,True

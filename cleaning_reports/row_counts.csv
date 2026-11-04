@@ -1,0 +1,11 @@
+file,raw_rows,clean_rows,removed_exact_duplicates
+teams,360,360,0
+conferences,32,32,0
+team_conferences,4298,4298,0
+seasons,12,12,0
+regular_season_results,65670,65344,326
+box_scores,131210,130688,522
+conference_tourney_games,3785,3785,0
+tournament_seeds,680,680,0
+tournament_results,670,670,0
+team_strength_preseason,4298,4298,0

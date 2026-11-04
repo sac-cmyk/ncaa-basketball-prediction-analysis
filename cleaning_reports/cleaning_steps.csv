@@ -1,0 +1,71 @@
+file,step,rows_before,rows_after,affected_rows,reason
+teams,load,360,360,0,Read the full supplied file; sample files are not used.
+teams,remove exact duplicates,360,360,0,Remove only fully identical rows.
+conferences,load,32,32,0,Read the full supplied file; sample files are not used.
+conferences,remove exact duplicates,32,32,0,Remove only fully identical rows.
+team_conferences,load,4298,4298,0,Read the full supplied file; sample files are not used.
+team_conferences,remove exact duplicates,4298,4298,0,Remove only fully identical rows.
+seasons,load,12,12,0,Read the full supplied file; sample files are not used.
+seasons,remove exact duplicates,12,12,0,Remove only fully identical rows.
+regular_season_results,load,65670,65670,0,Read the full supplied file; sample files are not used.
+regular_season_results,remove exact duplicates,65670,65344,326,Remove only fully identical rows.
+box_scores,load,131210,131210,0,Read the full supplied file; sample files are not used.
+box_scores,remove exact duplicates,131210,130688,522,Remove only fully identical rows.
+conference_tourney_games,load,3785,3785,0,Read the full supplied file; sample files are not used.
+conference_tourney_games,remove exact duplicates,3785,3785,0,Remove only fully identical rows.
+tournament_seeds,load,680,680,0,Read the full supplied file; sample files are not used.
+tournament_seeds,remove exact duplicates,680,680,0,Remove only fully identical rows.
+tournament_results,load,670,670,0,Read the full supplied file; sample files are not used.
+tournament_results,remove exact duplicates,670,670,0,Remove only fully identical rows.
+team_strength_preseason,load,4298,4298,0,Read the full supplied file; sample files are not used.
+team_strength_preseason,remove exact duplicates,4298,4298,0,Remove only fully identical rows.
+teams,validate keys,360,360,0,No missing keys or conflicting duplicate keys allowed.
+conferences,validate keys,32,32,0,No missing keys or conflicting duplicate keys allowed.
+team_conferences,validate keys,4298,4298,0,No missing keys or conflicting duplicate keys allowed.
+seasons,validate keys,12,12,0,No missing keys or conflicting duplicate keys allowed.
+regular_season_results,validate keys,65344,65344,0,No missing keys or conflicting duplicate keys allowed.
+box_scores,validate keys,130688,130688,0,No missing keys or conflicting duplicate keys allowed.
+conference_tourney_games,validate keys,3785,3785,0,No missing keys or conflicting duplicate keys allowed.
+tournament_seeds,validate keys,680,680,0,No missing keys or conflicting duplicate keys allowed.
+tournament_results,validate keys,670,670,0,No missing keys or conflicting duplicate keys allowed.
+team_strength_preseason,validate keys,4298,4298,0,No missing keys or conflicting duplicate keys allowed.
+teams,validate keys,360,360,0,No missing keys or conflicting duplicate keys allowed.
+conferences,validate keys,32,32,0,No missing keys or conflicting duplicate keys allowed.
+team_conferences,validate keys,4298,4298,0,No missing keys or conflicting duplicate keys allowed.
+seasons,validate keys,12,12,0,No missing keys or conflicting duplicate keys allowed.
+regular_season_results,validate keys,65344,65344,0,No missing keys or conflicting duplicate keys allowed.
+box_scores,validate keys,130688,130688,0,No missing keys or conflicting duplicate keys allowed.
+conference_tourney_games,validate keys,3785,3785,0,No missing keys or conflicting duplicate keys allowed.
+tournament_seeds,validate keys,680,680,0,No missing keys or conflicting duplicate keys allowed.
+tournament_results,validate keys,670,670,0,No missing keys or conflicting duplicate keys allowed.
+team_strength_preseason,validate keys,4298,4298,0,No missing keys or conflicting duplicate keys allowed.
+regular_season_results,repair verified score reversals,65344,65344,331,Swap score values only when both box scores verify the correction; no game is removed.
+box_scores,validate fgm counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate fga counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate fgm3 counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate fga3 counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate ftm counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate fta counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate oreb counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate dreb counts,130688,130688,6,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate ast counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate tov counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate stl counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate blk counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,validate pf counts,130688,130688,0,Replace impossible counts with NA; preserve valid counts and all rows.
+box_scores,mask inconsistent field-goal attempts,130688,130688,6,Keep original values in audit; leave FGA unknown instead of estimating or using zero.
+box_scores,retain original missing values,130688,130688,0,No missing statistic is filled with zero or imputed.
+teams,retain blank aliases,360,360,0,Blank brief_alias is intentional for teams other than A and C.
+regular_season_results,mask unreliable 2019 locations,65344,65344,5586,Preserve original label; unknown venue for 2019; retain all games.
+regular_season_results,flag conference tournaments,65344,65344,3785,Add flag using verified game keys; do not append or duplicate games.
+regular_season_only,derive regular-season-only export,65344,61559,3785,Analysis subset excluding conference tournaments; main cleaned results retain these games.
+teams,export,360,360,0,Write teams.csv; original input remains untouched.
+conferences,export,32,32,0,Write conferences.csv; original input remains untouched.
+team_conferences,export,4298,4298,0,Write team_conferences.csv; original input remains untouched.
+seasons,export,12,12,0,Write seasons.csv; original input remains untouched.
+regular_season_results,export,65344,65344,0,Write regular_season_results.csv.gz; original input remains untouched.
+box_scores,export,130688,130688,0,Write box_scores.csv.gz; original input remains untouched.
+conference_tourney_games,export,3785,3785,0,Write conference_tourney_games.csv; original input remains untouched.
+tournament_seeds,export,680,680,0,Write tournament_seeds.csv; original input remains untouched.
+tournament_results,export,670,670,0,Write tournament_results.csv; original input remains untouched.
+team_strength_preseason,export,4298,4298,0,Write team_strength_preseason.csv; original input remains untouched.

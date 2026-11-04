@@ -1,0 +1,7 @@
+stage,team,wins,losses,games,win_rate_pct
+Raw pre-selection results,Team A,22,10,32,68.75
+Raw pre-selection results,Team C,27,4,31,87.09677419354838
+Clean pre-selection results,Team A,22,10,32,68.75
+Clean pre-selection results,Team C,27,4,31,87.09677419354838
+Clean regular-season only,Team A,21,9,30,70.0
+Clean regular-season only,Team C,24,4,28,85.71428571428571

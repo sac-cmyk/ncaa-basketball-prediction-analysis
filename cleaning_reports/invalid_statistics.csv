@@ -1,0 +1,13 @@
+season,day_num,team_id,opp_team_id,column,original_value,reason
+2015,30,1339,1169,dreb,-20.0,Negative or fractional event count
+2018,50,1231,1336,dreb,-21.0,Negative or fractional event count
+2020,122,1290,1324,dreb,-15.0,Negative or fractional event count
+2022,115,1241,1307,dreb,-18.0,Negative or fractional event count
+2024,14,1439,1142,dreb,-25.0,Negative or fractional event count
+2024,103,1156,1101,dreb,-22.0,Negative or fractional event count
+2015,118,1291,1305,fga,15.0,Attempts conflict with made shots or three-point attempts; true value unavailable
+2016,17,1134,1233,fga,19.0,Attempts conflict with made shots or three-point attempts; true value unavailable
+2019,122,1432,1271,fga,25.0,Attempts conflict with made shots or three-point attempts; true value unavailable
+2023,27,1207,1300,fga,22.0,Attempts conflict with made shots or three-point attempts; true value unavailable
+2025,55,1181,1377,fga,24.0,Attempts conflict with made shots or three-point attempts; true value unavailable
+2025,69,1222,1186,fga,17.0,Attempts conflict with made shots or three-point attempts; true value unavailable
