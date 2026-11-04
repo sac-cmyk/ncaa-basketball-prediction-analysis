@@ -28,22 +28,23 @@ Team C has historically been a weak team, but it is now winning 85% of its games
 3. **How did each team perform in home, away, and neutral-site games?**  
    **Goal:** Check whether game location could have affected the comparison.
 
-4. **How have Team C’s preseason ratings changed over time, and how did its 2026 results compare with preseason expectations?**  
-   **Goal:** See whether Team C appears to have been improving and whether its 2026 performance was unexpected.
+4. **How have Team C’s preseason ratings changed over time, and was its 2026 win rate unusual compared with teams with similar preseason ratings?**
+   **Goal:** See whether Team C has been improving and compare its 2026 result with historical preseason expectations.
 
 5. **Across past seasons, how did teams with high regular-season win rates perform in the national tournament?**  
    **Goal:** See whether a high win rate has usually been a good sign of tournament success.
 
-6. **Across past seasons, did teams with stronger preseason ratings tend to have higher regular-season win rates?**
-   **Goal:** Measure the relationship between expectations before the season and actual results.
-
 ## Repository Guide
-- `notebooks/cleaning.ipynb` — Loads the data we use, documents cleaning steps, and reports row counts.
-- `notebooks/exploration.ipynb` — Explores Team A and Team C’s win rates and related patterns.
-- `figures/domain_inputs_graph.png` — Shows the relationships described by the domain experts and the claim being investigated.
-- `hypotheses.md` — States our narrowed problem, two hypotheses, predictions, and planned tests.
-- `Data/` — Contains the supplied project datasets.
 
-## Reproducing the Work
+- `Data/` — The original datasets supplied for the project.
+- `notebooks/cleaning.ipynb` — Documents the cleaning steps, checks, and changes in row counts.
+- `cleaned_data/` — The datasets produced by the cleaning notebook.
+- `cleaning_reports/` — Records the cleaning checks and changes.
+- `notebooks/exploration.ipynb` — Explores the headline win-rate comparison and related patterns.
+- `figures/` — Contains the domain-input graph, the two hypothesis graphs, and figures from the exploration notebook.
+- `hypotheses.md` — States the specific problem, two hypotheses, their predictions, and the planned tests.
 
+## AI-Usage
+
+We used AI to help me learn how to work in Jupyter Notebook, clean the datasets, and create visualizations with Matplotlib. We have reviewed the code and results and made the final decisions about the analysis.
 
