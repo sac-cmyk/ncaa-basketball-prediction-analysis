@@ -34,6 +34,9 @@ Team C has historically been a weak team, but it is now winning 85% of its games
 5. **Across past seasons, how did teams with high regular-season win rates perform in the national tournament?**  
    **Goal:** See whether a high win rate has usually been a good sign of tournament success.
 
+6. **Across past seasons, did teams with stronger preseason ratings tend to have higher regular-season win rates?**
+   **Goal:** Measure the relationship between expectations before the season and actual results.
+
 ## Repository Guide
 - `notebooks/cleaning.ipynb` — Loads the data we use, documents cleaning steps, and reports row counts.
 - `notebooks/exploration.ipynb` — Explores Team A and Team C’s win rates and related patterns.
