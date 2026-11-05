@@ -46,5 +46,5 @@ Team C has historically been a weak team, but it is now winning 85% of its games
 
 ## AI-Usage
 
-We used AI to help me learn how to work in Jupyter Notebook, clean the datasets, and create visualizations with Matplotlib. We have reviewed the code and results and made the final decisions about the analysis.
+We used AI to help us learn how to work in Jupyter Notebook, clean the datasets, and create visualizations with Matplotlib. We have reviewed the code and results and made the final decisions about the analysis.
 
