@@ -13,4 +13,4 @@
 - Preseason ratings are fixed estimates, not final season rankings. Use team ID and season for joins, including conference membership.
 - Corrected score margins and the headline regular-season restriction have different effects. See headline_before_after.csv and the notebook's margin output. Venue sensitivity is a sample comparison, not recovery of true 2019 locations.
 
-All corrections are reproducible in notebooks/cleaning.ipynb or scripts/clean_data.py. Original files are not overwritten.
+All corrections are reproducible in `notebooks/cleaning.ipynb`. Original files are not overwritten.
