@@ -1,17 +1,17 @@
 # M2 Model and Validation Plan
 
-> **Status:** This document describes the planned experiments. Results and verdicts will be recorded separately after the experiments are run.
+> This document records the experiment designs and choices for M2. Numerical results, MLflow records, and hypothesis verdicts are reported in [`results/results.md`](results/results.md).
 
 ## Purpose
 
-We will test our two hypotheses with repeatable experiments. Model versions within each hypothesis will use the same walk-forward validation folds. The final test season will be evaluated once after model selection.
+We designed repeatable experiments to test our two hypotheses. Within each hypothesis, candidate models use the same walk-forward validation folds so their results can be compared fairly. The selected model is evaluated on its final test season once, after model selection.
 
-We selected different model approaches because the hypotheses ask different questions:
+We chose different model types because the hypotheses ask different questions:
 
-- **H1** asks how game factors relate to winning and how opponent strength changes the comparison between Team A and Team C.
-- **H2** asks whether adding preseason rating improves predictions beyond win rate.
+- **H1** asks whether adding opponent strength improves game-win predictions and how it changes the Team A–Team C comparison.
+- **H2** asks whether adding preseason rating to regular-season win rate improves predictions of tournament success.
 
-H1 and H2 use different final test seasons because tournament outcomes are available through 2025, while regular-season game outcomes are available for 2026.
+H1 and H2 use different final test seasons because regular-season game results are available through 2026, while tournament outcomes are available through 2025.
 
 ## Hypothesis 1 — Opponent Strength
 
@@ -19,59 +19,68 @@ H1 and H2 use different final test seasons because tournament outcomes are avail
 
 ### Data and Row Definition
 
-We plan to use:
+The H1 preparation uses:
 
 - `regular_season_only.csv.gz` for regular-season games and locations.
 - `team_strength_preseason.csv` for teams’ preseason ratings.
 - `seasons.csv` to organize the data by season.
 
-Each row will represent one team’s perspective on a game. Each game will produce one row for each team:
+Each row represents one team’s perspective on one game. Each game produces two rows:
 
-- The winning team’s row will have an outcome of **win**.
-- The losing team’s row will have an outcome of **loss**.
-- The location will be represented from the focal team’s perspective: home and away will be reversed for the losing team, while neutral will remain neutral.
+- The winning team’s row has `outcome = win`.
+- The losing team’s row has `outcome = loss`.
+- The location is recorded from that row’s team perspective. Home and away are reversed for the losing team; neutral remains neutral.
+- `outcome_binary` is 1 for a win and 0 for a loss. It is used to calculate Brier scores, not as a model input.
 
-The historical games from 2015–2025 will be used for training and validation. The 2026 schedules will provide the shared opponent and location mix for the Team A versus Team C comparison.
+The prepared H1 files are in `prepared_data/H1/`. They include the model-ready fold data, fold manifest, game-level data, and shared 2026 comparison scenarios.
 
-**TODO:** Decide how to handle 2019 games, whose cleaned location values are marked unreliable. Do not use `w_loc_original` unless its reliability is confirmed.
+The cleaned location value for 2019 games was unreliable, so it was recorded as `Unknown` and kept as its own location category. The `w_loc_original` field was not used.
 
-### Planned Model: Bayesian Network
+Preseason ratings were numerical, so they were grouped as **low, medium, or high** for the discrete Bayesian network. The rating cutoffs are recorded in `h1_fold_manifest.csv`.
 
-We plan to use a Bayesian network because H1 concerns the relationships among a team’s strength, its opponent’s strength, game location, and the game outcome. The network will represent these relationships and estimate the probability of winning a matchup.
+### Model: Bayesian Network
 
-Conceptually, the model will include:
+H1 uses a discrete Bayesian network from **pgmpy** because it estimates the chance of winning from categorical information about a team, its opponent, and game location.
 
-- The focal team’s preseason rating.
-- The opponent’s preseason rating.
-- The game location.
-- The game outcome: win or loss.
+The model predicts `outcome` (`win` or `loss`) and estimates the probability of a win. Its inputs are:
 
-The focal team’s rating will represent its estimated strength. The opponent’s rating will represent opponent strength. Location will account for where the game was played.
+| Model | Input columns |
+|---|---|
+| Baseline | `focal_rating_group`, `focal_location` |
+| Opponent-adjusted | `focal_rating_group`, `focal_location`, `opponent_rating_group` |
 
-**TODO:** Decide how the Bayesian network will represent numeric preseason ratings.
+The **focal team** is the team represented by a row. The opponent is the other team in that game. The baseline uses the focal team’s preseason strength group and location. The opponent-adjusted model adds the opponent’s preseason strength group.
+
+Both versions use the same Bayesian estimator, BDeu prior, equivalent sample size of 10, and exact inference by variable elimination. The network structure is fixed, with each input pointing to `outcome`.
 
 ### Experiment
 
-We will compare two Bayesian-network versions using the same data, season splits, and modeling choices. The only planned difference is whether the opponent’s preseason rating is included.
+We compare two Bayesian-network versions. Both use the same training data, validation folds, target, Brier scoring method, and model-fitting settings. The only planned difference is whether `opponent_rating_group` is included.
 
-1. **Baseline version:** Uses the focal team’s preseason rating and game location, but not the opponent’s rating.
-2. **Opponent-adjusted version:** Uses the focal team’s preseason rating, the opponent’s preseason rating, and game location.
+1. **Baseline:** Uses the focal team’s rating group and location.
+2. **Opponent-adjusted:** Uses the focal team’s rating group, location, and the opponent’s rating group.
 
-The opponent-adjusted version will be the primary model for testing H1 because it accounts for opponent strength. The baseline version will serve as a reference for measuring what changes when opponent strength is included.
+This comparison tests whether adding opponent strength improves predictions beyond the baseline inputs.
 
-After validation, we will use the opponent-adjusted model to estimate Team A’s and Team C’s win probabilities over the same mix of opponents and locations from their combined 2026 schedules. We will average each team’s predicted probabilities and compare their adjusted win rates.
+For the separate Team A–Team C comparison, both models estimate win chances for both teams using the same 58 opponent-team and location situations from their combined 2026 schedules. In each situation, both teams are evaluated against the same opponent and at the same location. The scenario file contains no game outcomes.
 
 ### Validation and Data Split
 
-We will use **walk-forward validation**. Each validation fold will hold out one season. The model will train on earlier seasons, and the training data will expand as we move forward. All games from a season, including both team-perspective rows for a game, will remain in the same fold. Both Bayesian-network versions will use the same folds.
+We use **walk-forward validation**. Each fold holds out one season. The models train on earlier seasons, then the training data expands for the next fold. All games from a season stay together. Both models use the same folds, and 2020 is skipped.
 
-- **Initial training:** Seasons 2015–2019.
-- **Validation:** We will skip 2020. The first fold will validate on 2021 using 2015–2019 for training. For each next fold, we will add the completed validation season to the training data and validate on the following season through 2025.
-- **Final test:** After validation, we will train the opponent-adjusted model on historical data from 2015–2025, excluding 2020, and evaluate it on 2026 once.
+| Training seasons | Validation season |
+|---|---:|
+| 2015–2019 | 2021 |
+| 2015–2019 and 2021 | 2022 |
+| 2015–2019 and 2021–2022 | 2023 |
+| 2015–2019 and 2021–2023 | 2024 |
+| 2015–2019 and 2021–2024 | 2025 |
 
-We will compare the two versions’ validation Brier scores, their average and spread across seasons, and the training-versus-validation performance gap.
+For each model, we report the Brier score for every validation season, the mean and spread across seasons, and the training-versus-validation gap. A lower Brier score means the predicted probabilities were closer to the game outcomes.
 
-For the final 2026 comparison, we will use Team A’s and Team C’s preseason ratings and the same mix of 2026 opponents and locations to calculate adjusted win-rate estimates. We will not use a 2026 game’s outcome to predict that game.
+The model selected using validation results is fit on the available seasons through 2025, excluding 2020, and scored on the 2026 games once. The 2026 game outcomes are used only for this final test score—not for the Team A–Team C comparison.
+
+For the Team A–Team C comparison, both model versions are fit through 2025. For each model, we average the predicted win chances across the same 58 situations and compare Team A’s average with Team C’s. These are model estimates, not actual win rates.
 
 ## Hypothesis 2 — Does Preseason Rating Add Useful Information?
 
@@ -79,41 +88,48 @@ For the final 2026 comparison, we will use Team A’s and Team C’s preseason r
 
 ### Data and Row Definition
 
-We plan to create one row for each active team-season using:
+The H2 preparation creates one row for each active team-season using:
 
-- `team_conferences.csv` or `team_strength_preseason.csv` to identify active team-seasons.
-- `regular_season_only.csv.gz` for regular-season records and win rates.
+- `regular_season_only.csv.gz` for regular-season games and win rates.
 - `team_strength_preseason.csv` for preseason ratings.
 - `tournament_results.csv` to determine whether a team won a main-bracket game.
 - `tournament_seeds.csv` to identify tournament entrants when needed.
 - `teams.csv` for team names and IDs.
+- `team_conferences.csv` or `team_strength_preseason.csv` to identify active team-seasons.
 - `seasons.csv` to organize the data by season.
 
-The outcome will be whether a team won at least one main-bracket game. Teams that did not enter the tournament will be labeled as having no main-bracket win. Tournament seed will not be used as a model input.
+The outcome is whether a team won at least one main-bracket game. A team that did not enter the tournament is labeled as having no main-bracket win. A First Four win does not count as a main-bracket win. Tournament seed is not used as a model input.
 
-### Planned Model: Logistic Regression
+The prepared H2 files are in `prepared_data/H2/`.
 
-We plan to use logistic regression because the outcome is yes or no, and the model estimates the probability of a team winning at least one main-bracket game.
+### Model: Logistic Regression
 
-We will compare two versions of the same model:
+H2 uses logistic regression because the outcome is yes or no and the model estimates the probability of a team winning at least one main-bracket game.
 
-1. **Win-rate-only version:** Uses regular-season win rate.
-2. **Win-rate-plus-rating version:** Uses regular-season win rate and preseason rating.
+We compare two versions of the same model:
 
-Keeping the model type the same will let us test whether adding preseason rating improves the predictions.
+1. **Win-rate-only:** Uses `regular_season_win_rate`.
+2. **Win-rate-plus-rating:** Uses `regular_season_win_rate` and `preseason_rating`.
+
+The model type, folds, scoring method, and fitting settings stay the same. The planned difference is whether `preseason_rating` is included.
 
 ### Validation and Data Split
 
-We will use **walk-forward validation**. Each validation fold will hold out one season. The model will train on earlier seasons, and the training data will expand as we move forward. Both logistic-regression versions will use the same folds.
+We use **walk-forward validation**. Each fold holds out one season, and the training data expands as we move forward. Both logistic-regression versions use the same folds. Season 2020 is skipped because there was no tournament.
 
-- **Initial training:** Team-season rows from 2015–2019.
-- **Validation:** We will skip 2020 because there was no tournament. The first fold will validate on 2021 using 2015–2019 for training. For each next fold, we will add the completed validation season to the training data and validate on the following season through 2024.
-- **Final test:** After comparing the two versions on the validation folds and selecting a model, we will train it on historical data from 2015–2024, excluding 2020, and evaluate it on 2025 once.
+| Training seasons | Validation season |
+|---|---:|
+| 2015–2019 | 2021 |
+| 2015–2019 and 2021 | 2022 |
+| 2015–2019 and 2021–2022 | 2023 |
+| 2015–2019 and 2021–2023 | 2024 |
 
-We will compare the models’ Brier scores for each validation fold, their average and spread across seasons, and the training-versus-validation performance gap. We will use validation results—not the 2025 test result—to decide whether adding preseason rating improves predictions.
+After comparing validation results and selecting a model, we train it on 2015–2019 and 2021–2024, then evaluate it on the 2025 test season once. We use validation results—not the 2025 test result—to decide whether adding preseason rating improves predictions.
 
-After scoring the selected model on the 2025 test, we will generate 2026 probability estimates for Team A and Team C using both model versions. These 2026 estimates will be forecasts only because the dataset has no 2026 tournament outcomes to score against.
+We report each model’s Brier score for every validation season, the mean and spread across seasons, and the training-versus-validation gap.
+
+After scoring the selected model on the 2025 test, we generate 2026 probability forecasts for Team A and Team C using both model versions. These are forecasts only; there are no 2026 tournament outcomes available to score them.
 
 ## Hypothesis Wording Changes Since M1
 
-The wording of the two hypotheses remained unchanged from M1.
+The wording of both hypotheses remained unchanged from M1.

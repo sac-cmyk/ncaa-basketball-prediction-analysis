@@ -1,3 +1,0 @@
-Model,Team A average predicted chance,Team C average predicted chance,Difference (Team A - Team C),Number of shared situations
-Baseline,0.612862777046957,0.5102585258013593,0.10260425124559769,58
-Opponent-adjusted,0.7137829890673625,0.5101925189528944,0.20359047011446807,58

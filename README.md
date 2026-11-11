@@ -36,13 +36,34 @@ Team C has historically been a weak team, but it is now winning 85% of its games
 
 ## Repository Guide
 
-- `Data/` — The original datasets supplied for the project.
-- `notebooks/cleaning.ipynb` — Documents the cleaning steps, checks, and changes in row counts.
-- `cleaned_data/` — The datasets produced by the cleaning notebook.
-- `cleaning_reports/` — Records the cleaning checks and changes.
+#### Data
+
+- `Data/` — Original datasets supplied for the project.
+- `cleaned_data/` — Cleaned datasets produced by the cleaning notebook.
+- `cleaning_reports/` — Notes on data-quality checks and cleaning decisions.
+- `prepared_data/H1/` — Prepared H1 CSV files, including the fold data, fold manifest, game-level data, and shared 2026 comparison scenarios.
+- `prepared_data/H2/` — Prepared H2 CSV files, including the team-season data and fold manifest.
+
+#### Notebooks and plans
+
+- `notebooks/cleaning.ipynb` — Documents data cleaning, checks, and row-count changes.
 - `notebooks/exploration.ipynb` — Explores the headline win-rate comparison and related patterns.
-- `figures/` — Contains the domain-input graph, the two hypothesis graphs, and figures from the exploration notebook.
-- `hypotheses.md` — States the specific problem, two hypotheses, their predictions, and the planned tests.
+- `notebooks/feature_engineering_H1.ipynb` and `notebooks/feature_engineering_H2.ipynb` — Prepare the model-ready data and explain the rows, features, outcomes, and splits.
+- `notebooks/H1_Model_Experiments.ipynb` — Runs the H1 Bayesian-network comparisons, walk-forward validation, final 2026 test, and Team A–Team C comparison.
+- `experiment.md` — Describes the M2 model choices, experiment designs, and validation plans.
+- `hypothesis.md` — States the problem, hypotheses, predictions, and planned tests.
+
+#### MLflow tracking
+
+- `mlflow/H{}/mlflow.db` and `mlflow/H{}/mlartifacts/` — Store MLflow run records and logged files. H1 and H2 runs are kept as separate MLflow experiments.
+
+#### Results
+
+- `results/results.md` — M2 results report. H1 results are recorded; H2 has placeholders until its experiment is complete.
+- `results/H1/` — H1 validation scores, predictions, figures, verdict, and exported MLflow run table.
+- `results/H2/` — H2 results and exported MLflow run table, to be added after its experiment is complete.
+- `figures/` — Domain-input graph, hypothesis graphs, and exploration figures.
+
 
 ## AI-Usage
 
