@@ -1,0 +1,361 @@
+season,team_id,team_name,brief_alias,model,forecast_probability_at_least_one_main_bracket_win
+2026,1101,Abernathy State,,Win-rate-only,0.013413336271864395
+2026,1102,Alder,,Win-rate-only,0.11567364375374367
+2026,1103,Aldridge,,Win-rate-only,0.03137925718029155
+2026,1104,Ashby,,Win-rate-only,0.01887815067157836
+2026,1105,Ashford,Team A,Win-rate-only,0.2181632251328858
+2026,1106,Ashgrove State,,Win-rate-only,0.32342598236323694
+2026,1107,Ashland State,,Win-rate-only,0.026202273823100797
+2026,1108,Ashworth,,Win-rate-only,0.008756660144006756
+2026,1109,Barrow,,Win-rate-only,0.06533367909822149
+2026,1110,Bayfield,,Win-rate-only,0.09848786452287298
+2026,1111,Bellamy State,,Win-rate-only,0.01887815067157836
+2026,1112,Bexley State,,Win-rate-only,0.05351302965992536
+2026,1113,Bexley-Whitcomb,,Win-rate-only,0.012643563998059734
+2026,1114,Birchfield,,Win-rate-only,0.003746985259772682
+2026,1115,Blakely,,Win-rate-only,0.051722186515097926
+2026,1116,Bramley,,Win-rate-only,0.08682251598273068
+2026,1117,Brennan,,Win-rate-only,0.18136663789535926
+2026,1118,Brennan State,,Win-rate-only,0.018224065580563453
+2026,1119,Bristow Tech,,Win-rate-only,0.34405940508806043
+2026,1120,Calloway State,Team C,Win-rate-only,0.602404657056706
+2026,1121,Carlisle State,,Win-rate-only,0.018224065580563453
+2026,1122,Carrington,,Win-rate-only,0.037109348351633036
+2026,1123,Central Aldridge,,Win-rate-only,0.002891934345224735
+2026,1124,Central Corbin,,Win-rate-only,0.062271795941321866
+2026,1125,Central Dunbar,,Win-rate-only,0.02157839377975318
+2026,1126,Central Fairview,,Win-rate-only,0.0011940930583787032
+2026,1127,Central Hadley,,Win-rate-only,0.23645585853765178
+2026,1128,Central Kilbride,,Win-rate-only,0.014791942866346624
+2026,1129,Central Langford,,Win-rate-only,0.001996828578532575
+2026,1130,Central Morrow,,Win-rate-only,0.0004529630208677472
+2026,1131,Central Oakhurst,,Win-rate-only,0.03803964787543362
+2026,1132,Central Stratton ,,Win-rate-only,0.0032145169113531272
+2026,1133,Coleridge State ,,Win-rate-only,0.003746985259772682
+2026,1134,Colfax A&M,,Win-rate-only,0.051722186515097926
+2026,1135,Colfax-Haverly ,,Win-rate-only,0.08682251598273068
+2026,1136,Copeland,,Win-rate-only,0.09848786452287298
+2026,1137,Corbin Tech,,Win-rate-only,0.02585369720276335
+2026,1138,Cranston,,Win-rate-only,0.008756660144006756
+2026,1139,Crestwood,,Win-rate-only,0.24553050683663588
+2026,1140,Crestwood State,,Win-rate-only,0.16310700842022227
+2026,1141,Cumberland State,,Win-rate-only,0.13390895488938942
+2026,1142,Dalton A&M,,Win-rate-only,0.4502301922524826
+2026,1143,Dalton State,,Win-rate-only,0.3047247005477875
+2026,1144,Danforth,,Win-rate-only,0.1469101167596639
+2026,1145,Danforth A&M,,Win-rate-only,0.34405940508806043
+2026,1146,Darby College,,Win-rate-only,0.05351302965992536
+2026,1147,Delmar,,Win-rate-only,0.04432628108436369
+2026,1148,Denholm State,,Win-rate-only,0.002190613610611594
+2026,1149,Dorrance A&M,,Win-rate-only,0.13390895488938942
+2026,1150,Dorrance State,,Win-rate-only,0.062271795941321866
+2026,1151,Dunbar ,,Win-rate-only,0.005356026918232491
+2026,1152,Dunhill,,Win-rate-only,0.0004713355472067051
+2026,1153,Dunmoor,,Win-rate-only,0.08070422435120417
+2026,1154,Dunmore,,Win-rate-only,0.013413336271864395
+2026,1155,Dunmore-Sedgwick,,Win-rate-only,0.005356026918232491
+2026,1156,East Fairhaven,,Win-rate-only,0.037109348351633036
+2026,1157,East Garrison,,Win-rate-only,0.026202273823100797
+2026,1158,East Gilford,,Win-rate-only,0.051722186515097926
+2026,1159,East Harlow,,Win-rate-only,0.005356026918232491
+2026,1160,East Kittredge,,Win-rate-only,0.04542498277504233
+2026,1161,East Lennox,,Win-rate-only,0.010917746953216984
+2026,1162,East Morrow,,Win-rate-only,0.09848786452287298
+2026,1163,East Norcross,,Win-rate-only,0.001091383739424745
+2026,1164,East Northfield,,Win-rate-only,0.012643563998059734
+2026,1165,East Ogden,,Win-rate-only,0.018224065580563453
+2026,1166,East Quarles,,Win-rate-only,0.0008440252371917789
+2026,1167,East Westover,,Win-rate-only,0.01887815067157836
+2026,1168,Eastern Crestwood,,Win-rate-only,0.006057343524879333
+2026,1169,Eastern Dalton,,Win-rate-only,0.10618588334001056
+2026,1170,Eastern Fulton,,Win-rate-only,0.05351302965992536
+2026,1171,Eastern Gresham,,Win-rate-only,0.1469101167596639
+2026,1172,Eastern Hollis,,Win-rate-only,0.014791942866346624
+2026,1173,Eastern Kinsey,,Win-rate-only,0.012643563998059734
+2026,1174,Eastern Rutledge,,Win-rate-only,0.002891934345224735
+2026,1175,Eastern Summerville,,Win-rate-only,0.04542498277504233
+2026,1176,Eastern Tamworth,,Win-rate-only,0.026202273823100797
+2026,1177,Eastern Weston ,,Win-rate-only,0.022126305146863715
+2026,1178,Easton,,Win-rate-only,0.32342598236323694
+2026,1179,Easton State,,Win-rate-only,0.4125219426305083
+2026,1180,Eldridge,,Win-rate-only,0.022126305146863715
+2026,1181,Elkin,,Win-rate-only,0.4502301922524826
+2026,1182,Ellison State ,,Win-rate-only,0.3638649883226421
+2026,1183,Emmett,,Win-rate-only,0.037539665822409155
+2026,1184,Everly,,Win-rate-only,0.04432628108436369
+2026,1185,Everly State,,Win-rate-only,0.037109348351633036
+2026,1186,Everton State,,Win-rate-only,0.04542498277504233
+2026,1187,Fairbank,,Win-rate-only,0.0018314316153392575
+2026,1188,Fairbank State ,,Win-rate-only,0.26570609221262464
+2026,1189,Fairhaven,,Win-rate-only,0.011813422435620405
+2026,1190,Fairlee State,,Win-rate-only,0.008756660144006756
+2026,1191,Fairview State,,Win-rate-only,0.013413336271864395
+2026,1192,Fairview-Merritt,,Win-rate-only,0.007650721854633232
+2026,1193,Farrow,,Win-rate-only,0.08070422435120417
+2026,1194,Fenwick,,Win-rate-only,0.16310700842022227
+2026,1195,Fielding Christian,,Win-rate-only,0.03137925718029155
+2026,1196,Foxworth,,Win-rate-only,0.07574823628251827
+2026,1197,Foxworth State,,Win-rate-only,0.0009513073301011527
+2026,1198,Fulton Baptist,,Win-rate-only,0.015557990874234989
+2026,1199,Fulton State,,Win-rate-only,0.002891934345224735
+2026,1200,Galloway Tech,,Win-rate-only,0.015557990874234989
+2026,1201,Garrison,,Win-rate-only,0.002891934345224735
+2026,1202,Gilford,,Win-rate-only,0.001996828578532575
+2026,1203,Glenhaven State,,Win-rate-only,0.026202273823100797
+2026,1204,Goodwin A&M,,Win-rate-only,0.004714736202763411
+2026,1205,Grafton College,,Win-rate-only,0.022126305146863715
+2026,1206,Grafton State,,Win-rate-only,0.006910255972041479
+2026,1207,Graydon State,,Win-rate-only,0.005356026918232491
+2026,1208,Greenfield ,,Win-rate-only,0.0012798758906848917
+2026,1209,Greenfield State,,Win-rate-only,0.022126305146863715
+2026,1210,Gresham,,Win-rate-only,0.6984220098839881
+2026,1211,Greystone A&M,,Win-rate-only,0.006057343524879333
+2026,1212,Greystone Baptist,,Win-rate-only,0.009515124857580494
+2026,1213,Hadley State,,Win-rate-only,0.02157839377975318
+2026,1214,Halston,,Win-rate-only,0.4125219426305083
+2026,1215,Halston-Northam,,Win-rate-only,0.018224065580563453
+2026,1216,Hampton Falls,,Win-rate-only,0.008756660144006756
+2026,1217,Harlow State,,Win-rate-only,0.1310578431515387
+2026,1218,Harlow-Weston,,Win-rate-only,0.10618588334001056
+2026,1219,Harrington State,,Win-rate-only,0.022126305146863715
+2026,1220,Hartwell A&M,,Win-rate-only,0.026202273823100797
+2026,1221,Hartwell State,,Win-rate-only,0.007650721854633232
+2026,1222,Haverly,,Win-rate-only,0.02585369720276335
+2026,1223,Hawthorne,,Win-rate-only,0.04432628108436369
+2026,1224,Hazelton Tech,,Win-rate-only,0.01887815067157836
+2026,1225,Hensley State,,Win-rate-only,0.1469101167596639
+2026,1226,Hillcrest,,Win-rate-only,0.2854644593429301
+2026,1227,Hollis A&M,,Win-rate-only,0.0033774782005745927
+2026,1228,Hollis State,,Win-rate-only,0.008756660144006756
+2026,1229,Holloway,,Win-rate-only,0.05351302965992536
+2026,1230,Ingram A&M,,Win-rate-only,0.062271795941321866
+2026,1231,Jessup State,,Win-rate-only,0.13390895488938942
+2026,1232,Kendall,,Win-rate-only,0.001091383739424745
+2026,1233,Kessler,,Win-rate-only,0.7748335626436393
+2026,1234,Keswick State,,Win-rate-only,0.08070422435120417
+2026,1235,Kilbride State,,Win-rate-only,0.0013783911757133237
+2026,1236,Kingsford State,,Win-rate-only,0.07574823628251827
+2026,1237,Kingsley Baptist,,Win-rate-only,0.09848786452287298
+2026,1238,Kingsley State,,Win-rate-only,0.08682251598273068
+2026,1239,Kingsley-Danforth,,Win-rate-only,0.09311673171226657
+2026,1240,Kinsey,,Win-rate-only,0.037109348351633036
+2026,1241,Kinsey-Northgate,,Win-rate-only,0.34405940508806043
+2026,1242,Kirkland A&M,,Win-rate-only,0.3047247005477875
+2026,1243,Kittredge State,,Win-rate-only,0.0033774782005745927
+2026,1244,Lakeport Baptist ,,Win-rate-only,0.11981565631890687
+2026,1245,Langford State,,Win-rate-only,0.003746985259772682
+2026,1246,Larkin State,,Win-rate-only,0.05564128509699659
+2026,1247,Larkin-Linwood,,Win-rate-only,0.17953226429122102
+2026,1248,Lennox,,Win-rate-only,0.1469101167596639
+2026,1249,Lindale,,Win-rate-only,0.17953226429122102
+2026,1250,Lindale-Tamworth,,Win-rate-only,0.4502301922524826
+2026,1251,Linwood Christian,,Win-rate-only,0.0026200537945320853
+2026,1252,Linwood-Tolliver,,Win-rate-only,0.005356026918232491
+2026,1253,Lockwood,,Win-rate-only,0.026509595692637857
+2026,1254,Loring,,Win-rate-only,0.1469101167596639
+2026,1255,Lyndhurst,,Win-rate-only,0.0009513073301011527
+2026,1256,Mansfield,,Win-rate-only,0.008756660144006756
+2026,1257,Mansfield State,,Win-rate-only,0.05351302965992536
+2026,1258,Marlow State,,Win-rate-only,0.0004364617445798735
+2026,1259,Marston,,Win-rate-only,0.03137925718029155
+2026,1260,Marston A&M,,Win-rate-only,0.13390895488938942
+2026,1261,Mayfield,,Win-rate-only,0.23645585853765178
+2026,1262,Medford State,,Win-rate-only,0.022126305146863715
+2026,1263,Merritt State,,Win-rate-only,0.05351302965992536
+2026,1264,Milford State,,Win-rate-only,0.10618588334001056
+2026,1265,Morrow A&M,,Win-rate-only,0.015557990874234989
+2026,1266,Mount St. Malachy,,Win-rate-only,0.002891934345224735
+2026,1267,Neville A&M,,Win-rate-only,0.051722186515097926
+2026,1268,Neville State,,Win-rate-only,0.706183797830281
+2026,1269,Newcomb State,,Win-rate-only,0.05351302965992536
+2026,1270,Newell State,,Win-rate-only,0.008756660144006756
+2026,1271,Norcross State,,Win-rate-only,0.01887815067157836
+2026,1272,North Ashby,,Win-rate-only,0.037539665822409155
+2026,1273,North Carlisle,,Win-rate-only,0.19976219971953396
+2026,1274,North Corbin,,Win-rate-only,0.03803964787543362
+2026,1275,North Dunhill,,Win-rate-only,0.18136663789535926
+2026,1276,North Ellison,,Win-rate-only,0.0016891095174360257
+2026,1277,North Farrow,,Win-rate-only,0.062271795941321866
+2026,1278,North Ingram,,Win-rate-only,0.1469101167596639
+2026,1279,North Jessup,,Win-rate-only,0.006057343524879333
+2026,1280,North Kilbride,,Win-rate-only,0.002891934345224735
+2026,1281,North Marston,,Win-rate-only,0.006057343524879333
+2026,1282,North Mayfield,,Win-rate-only,0.006742077685818922
+2026,1283,North Oakley,,Win-rate-only,0.037539665822409155
+2026,1284,North Pickering,,Win-rate-only,0.43192703244212727
+2026,1285,North Pinehurst,,Win-rate-only,0.037539665822409155
+2026,1286,North Ridgeway,,Win-rate-only,0.010117774089402478
+2026,1287,North Wexford,,Win-rate-only,0.0016252723338056054
+2026,1288,Northam State,,Win-rate-only,0.008756660144006756
+2026,1289,Northam-Dunmoor,,Win-rate-only,0.015557990874234989
+2026,1290,Northern Bayfield,,Win-rate-only,0.013413336271864395
+2026,1291,Northern Copeland,,Win-rate-only,0.0004529630208677472
+2026,1292,Northern Galloway,,Win-rate-only,0.23645585853765178
+2026,1293,Northern Halston ,,Win-rate-only,0.03803964787543362
+2026,1294,Northern Kessler,,Win-rate-only,0.06533367909822149
+2026,1295,Northern Keswick,,Win-rate-only,0.5242982159034246
+2026,1296,Northern Prescott,,Win-rate-only,0.0016252723338056054
+2026,1297,Northern Ridgeway,,Win-rate-only,0.017500480545875153
+2026,1298,Northern Whitcomb,,Win-rate-only,0.34405940508806043
+2026,1299,Northfield State,,Win-rate-only,0.005356026918232491
+2026,1300,Northgate Christian,,Win-rate-only,0.002190613610611594
+2026,1301,Norwood,,Win-rate-only,0.03137925718029155
+2026,1302,Norwood State,,Win-rate-only,0.015557990874234989
+2026,1303,Oakhurst State,,Win-rate-only,0.022126305146863715
+2026,1304,Oakley ,,Win-rate-only,0.005356026918232491
+2026,1305,Ogden State,,Win-rate-only,0.03137925718029155
+2026,1306,Orland,,Win-rate-only,0.03803964787543362
+2026,1307,Orland State,,Win-rate-only,0.05351302965992536
+2026,1308,Ormsby,,Win-rate-only,0.2181632251328858
+2026,1309,Ormsby A&M,,Win-rate-only,0.026202273823100797
+2026,1310,Ormsby State,,Win-rate-only,0.007959491910205221
+2026,1311,Osgood,,Win-rate-only,0.07574823628251827
+2026,1312,Overton,,Win-rate-only,0.10618588334001056
+2026,1313,Oxley State,,Win-rate-only,0.5397028864399883
+2026,1314,Parkhurst,,Win-rate-only,0.10618588334001056
+2026,1315,Payton State ,,Win-rate-only,0.007959491910205221
+2026,1316,Pemberton,,Win-rate-only,0.0012798758906848917
+2026,1317,Pemberton State,,Win-rate-only,0.3919795498647656
+2026,1318,Pendleton,,Win-rate-only,0.43192703244212727
+2026,1319,Penrose,,Win-rate-only,0.007650721854633232
+2026,1320,Penrose State,,Win-rate-only,0.005356026918232491
+2026,1321,Petersfield Baptist,,Win-rate-only,0.05564128509699659
+2026,1322,Petersfield-Darby ,,Win-rate-only,0.03137925718029155
+2026,1323,Pickering,,Win-rate-only,0.04432628108436369
+2026,1324,Pinehurst State,,Win-rate-only,0.015557990874234989
+2026,1325,Pomeroy,,Win-rate-only,0.010117774089402478
+2026,1326,Prescott State,,Win-rate-only,0.02157839377975318
+2026,1327,Pryor,,Win-rate-only,0.010917746953216984
+2026,1328,Pryor-Bristow,,Win-rate-only,0.10618588334001056
+2026,1329,Quarles,,Win-rate-only,0.04432628108436369
+2026,1330,Radcliffe,,Win-rate-only,0.0010164473945708532
+2026,1331,Radcliffe State,,Win-rate-only,0.037539665822409155
+2026,1332,Ramsey State,,Win-rate-only,0.0041866003277809885
+2026,1333,Redfield,,Win-rate-only,0.1469101167596639
+2026,1334,Redmond,,Win-rate-only,0.006057343524879333
+2026,1335,Redmond-Hawthorne,,Win-rate-only,0.010117774089402478
+2026,1336,Rexford ,,Win-rate-only,0.037539665822409155
+2026,1337,Ridgeway,,Win-rate-only,0.10618588334001056
+2026,1338,Riverton State,,Win-rate-only,0.2181632251328858
+2026,1339,Rockport Christian,,Win-rate-only,0.010917746953216984
+2026,1340,Rosedale State,,Win-rate-only,0.013413336271864395
+2026,1341,Rowley,,Win-rate-only,0.16310700842022227
+2026,1342,Rutledge Christian,,Win-rate-only,0.11567364375374367
+2026,1343,Saint Brendan,,Win-rate-only,0.3638649883226421
+2026,1344,Saint Colman,,Win-rate-only,0.19976219971953396
+2026,1345,Saint Finian,,Win-rate-only,0.34405940508806043
+2026,1346,Sanford State,,Win-rate-only,0.16310700842022227
+2026,1347,Sanford Tech,,Win-rate-only,0.017500480545875153
+2026,1348,Sedgwick College,,Win-rate-only,0.17953226429122102
+2026,1349,Sedgwick-Holloway,,Win-rate-only,0.17953226429122102
+2026,1350,Selby A&M,,Win-rate-only,0.0014923606003008623
+2026,1351,Selby-Shelby,,Win-rate-only,0.022126305146863715
+2026,1352,Shelby,,Win-rate-only,0.10618588334001056
+2026,1353,Somerset State,,Win-rate-only,0.38282163859233087
+2026,1354,South Bellamy,,Win-rate-only,0.07574823628251827
+2026,1355,South Danforth,,Win-rate-only,0.01887815067157836
+2026,1356,South Dunmore,,Win-rate-only,0.19976219971953396
+2026,1357,South Elkin,,Win-rate-only,0.062271795941321866
+2026,1358,South Emmett,,Win-rate-only,0.04432628108436369
+2026,1359,South Farrow,,Win-rate-only,0.037539665822409155
+2026,1360,South Hartwell,,Win-rate-only,0.0006564651220438583
+2026,1361,South Lennox,,Win-rate-only,0.005356026918232491
+2026,1362,South Orland,,Win-rate-only,0.10618588334001056
+2026,1363,South Trenholm,,Win-rate-only,0.026202273823100797
+2026,1364,South Westover,,Win-rate-only,0.6266879032787783
+2026,1365,Southeast Abernathy,,Win-rate-only,0.051722186515097926
+2026,1366,Southeast Alder,,Win-rate-only,0.037109348351633036
+2026,1367,Southeast Birchfield,,Win-rate-only,0.10618588334001056
+2026,1368,Southeast Copeland,,Win-rate-only,0.051722186515097926
+2026,1369,Southeast Holloway,,Win-rate-only,0.0016891095174360257
+2026,1370,Southeast Marlow,,Win-rate-only,0.0036010364613303014
+2026,1371,Southeast Milford,,Win-rate-only,0.017500480545875153
+2026,1372,Southeast Northgate,,Win-rate-only,0.007959491910205221
+2026,1373,Southeast Rowley,,Win-rate-only,0.007650721854633232
+2026,1374,Southern Carlisle,,Win-rate-only,0.3047247005477875
+2026,1375,Southern Fairlee,,Win-rate-only,0.16310700842022227
+2026,1376,Southern Glenhaven,,Win-rate-only,0.09311673171226657
+2026,1377,Southern Graydon,,Win-rate-only,0.01887815067157836
+2026,1378,Southern Kittredge,,Win-rate-only,0.04542498277504233
+2026,1379,Southern Lakeport,,Win-rate-only,0.062271795941321866
+2026,1380,Southern Lyndhurst,,Win-rate-only,0.002891934345224735
+2026,1381,Southern Marlow,,Win-rate-only,0.026202273823100797
+2026,1382,Southern Newcomb,,Win-rate-only,0.08682251598273068
+2026,1383,Southern Rockport,,Win-rate-only,0.026509595692637857
+2026,1384,Southern Tolliver,,Win-rate-only,0.24553050683663588
+2026,1385,Southern Varney,,Win-rate-only,0.05564128509699659
+2026,1386,Southern Wilder,,Win-rate-only,0.0008942784054410767
+2026,1387,St. Kieran's,,Win-rate-only,0.022126305146863715
+2026,1388,St. Ronan,,Win-rate-only,0.005356026918232491
+2026,1389,Stanwick,,Win-rate-only,0.007650721854633232
+2026,1390,Sterling,,Win-rate-only,0.17953226429122102
+2026,1391,Sterling A&M,,Win-rate-only,0.004773300813524539
+2026,1392,Sterling-Kittredge,,Win-rate-only,0.003746985259772682
+2026,1393,Stockbridge State,,Win-rate-only,0.23645585853765178
+2026,1394,Stockbridge-Bradwell,,Win-rate-only,0.018224065580563453
+2026,1395,Stratton Christian,,Win-rate-only,0.05564128509699659
+2026,1396,Summerville State,,Win-rate-only,0.006742077685818922
+2026,1397,Sutton State,,Win-rate-only,0.5242982159034246
+2026,1398,Tamworth,,Win-rate-only,0.08682251598273068
+2026,1399,Templeton,,Win-rate-only,0.010117774089402478
+2026,1400,Thayer A&M,,Win-rate-only,0.014791942866346624
+2026,1401,Thayer State,,Win-rate-only,0.037109348351633036
+2026,1402,Thayer-Stockbridge,,Win-rate-only,0.009515124857580494
+2026,1403,Thornbury,,Win-rate-only,0.04542498277504233
+2026,1404,Thornton,,Win-rate-only,0.0003301914046599357
+2026,1405,Thornton A&M,,Win-rate-only,0.014791942866346624
+2026,1406,Thornton-Cumberland,,Win-rate-only,0.0018314316153392575
+2026,1407,Tilden State,,Win-rate-only,0.008756660144006756
+2026,1408,Tolliver,,Win-rate-only,0.11981565631890687
+2026,1409,Tolliver State,,Win-rate-only,0.062271795941321866
+2026,1410,Tremont State,,Win-rate-only,0.0009513073301011527
+2026,1411,Trenholm College ,,Win-rate-only,0.16310700842022227
+2026,1412,Underhill A&M,,Win-rate-only,0.018224065580563453
+2026,1413,Upton Christian,,Win-rate-only,0.03137925718029155
+2026,1414,Upton State,,Win-rate-only,0.008756660144006756
+2026,1415,Vance,,Win-rate-only,0.3638649883226421
+2026,1416,Varney,,Win-rate-only,0.09848786452287298
+2026,1417,Vickery State,,Win-rate-only,0.026202273823100797
+2026,1418,Wakefield Baptist,,Win-rate-only,0.0016252723338056054
+2026,1419,Waverly Baptist,,Win-rate-only,0.014791942866346624
+2026,1420,Waverly State,,Win-rate-only,0.008756660144006756
+2026,1421,Wendover State,,Win-rate-only,0.09311673171226657
+2026,1422,West Abernathy,,Win-rate-only,0.07166099180950203
+2026,1423,West Ashby,,Win-rate-only,0.0041866003277809885
+2026,1424,West Ashgrove ,,Win-rate-only,0.004714736202763411
+2026,1425,West Ashland,,Win-rate-only,0.002190613610611594
+2026,1426,West Delmar,,Win-rate-only,0.037539665822409155
+2026,1427,West Galloway,,Win-rate-only,0.2854644593429301
+2026,1428,West Gilford,,Win-rate-only,0.026509595692637857
+2026,1429,West Kessler ,,Win-rate-only,0.26570609221262464
+2026,1430,West Medford,,Win-rate-only,0.03137925718029155
+2026,1431,West Pomeroy,,Win-rate-only,0.09848786452287298
+2026,1432,West Rowley,,Win-rate-only,0.19976219971953396
+2026,1433,West Shelby,,Win-rate-only,0.026202273823100797
+2026,1434,West Somerset,,Win-rate-only,0.01887815067157836
+2026,1435,West Wakefield,,Win-rate-only,0.010917746953216984
+2026,1436,West Wendover,,Win-rate-only,0.08682251598273068
+2026,1437,Western Darby,,Win-rate-only,0.018224065580563453
+2026,1438,Western Ellison,,Win-rate-only,0.11981565631890687
+2026,1439,Western Harrington,,Win-rate-only,0.0041866003277809885
+2026,1440,Western Hensley ,,Win-rate-only,0.0026200537945320853
+2026,1441,Western Kingsford,,Win-rate-only,0.3638649883226421
+2026,1442,Western Merritt,,Win-rate-only,0.051722186515097926
+2026,1443,Western Newell,,Win-rate-only,0.02585369720276335
+2026,1444,Western Parkhurst,,Win-rate-only,0.10618588334001056
+2026,1445,Western Ramsey,,Win-rate-only,0.11981565631890687
+2026,1446,Western Redfield,,Win-rate-only,0.08682251598273068
+2026,1447,Western Templeton,,Win-rate-only,0.3638649883226421
+2026,1448,Weston Christian,,Win-rate-only,0.0036010364613303014
+2026,1449,Westover State,,Win-rate-only,0.0013783911757133237
+2026,1450,Wexford,,Win-rate-only,0.4502301922524826
+2026,1451,Whitcomb,,Win-rate-only,0.007959491910205221
+2026,1452,Whitcomb State,,Win-rate-only,0.018224065580563453
+2026,1453,Wilder,,Win-rate-only,0.026509595692637857
+2026,1454,Winslow State,,Win-rate-only,0.2854644593429301
+2026,1455,Winslow-Thayer,,Win-rate-only,0.17953226429122102
+2026,1456,Wyndham,,Win-rate-only,0.0004215694796974876
+2026,1457,Yarborough,,Win-rate-only,0.07574823628251827
+2026,1458,Yardley,,Win-rate-only,0.002891934345224735
+2026,1459,Yardley State,,Win-rate-only,0.1469101167596639
+2026,1460,Yates Tech,,Win-rate-only,0.062271795941321866

@@ -1,0 +1,5 @@
+season,team_id,team_name,brief_alias,model,forecast_probability_at_least_one_main_bracket_win
+2026,1105,Ashford,Team A,Win-rate-only,0.2181632251328858
+2026,1120,Calloway State,Team C,Win-rate-only,0.602404657056706
+2026,1105,Ashford,Team A,Win-rate-plus-rating,0.8007146690344861
+2026,1120,Calloway State,Team C,Win-rate-plus-rating,0.04620059345280664

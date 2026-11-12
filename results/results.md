@@ -2,7 +2,7 @@
 
 This report records the experiments, validation results, final-test results, and hypothesis verdicts for Milestone 2. The experiment designs and model choices are described in [`experiment.md`](../experiment.md).
 
-**Status:** H1 results are recorded below. H2 is still in progress; its marked TODOs must be completed after its models are run and reviewed.
+**Status:** H1 and H2 experiments are recorded below. The hypotheses were unchanged from M1.
 
 ## H1 — Opponent Strength
 
@@ -59,15 +59,13 @@ The raw 2026 regular-season win rates were **70.0% for Team A** and **85.7% for 
 
 **H1 was supported.** On the same 58 opponent-and-location situations, the opponent-adjusted model estimated Team A’s average chance of winning at **71.4%**, compared with **51.0%** for Team C. Adding opponent strength also improved the model’s validation predictions: the mean Brier score fell from **0.2295** for the baseline to **0.2013** for the opponent-adjusted model, which had a lower score in all five validation seasons. The baseline already favored Team A (**61.3% vs. 51.0%**); adding opponent strength made the comparison more informative and increased Team A’s estimated lead from **10.3 to 20.4 percentage points**.
 
-H1 run details and outputs are in [`H1 results`](H1/). The exported MLflow table contains **13 runs**. The run table, fold-level scores, final-test predictions, comparison predictions, comparison summary, and figures are committed alongside this report.
+H1 run details and outputs are in [H1 results](H1/). The exported MLflow table contains **13 runs**. The run table, fold-level scores, final-test predictions, comparison predictions, comparison summary, and figures are committed alongside this report.
 
 ## H2 — Does Preseason Rating Add Useful Information?
 
-**Status:** TODO — the experiment is still being run. Replace every TODO below with the team's checked results before the M2 tag.
-
 ### Experiment design
 
-The outcome is whether a team won at least one main-bracket game. Each row is one team-season. Non-entrants are labeled as no main-bracket win. Both candidates use logistic regression and the same season splits; the second candidate adds preseason rating.
+The outcome was whether a team won at least one main-bracket game. Each row represented one team-season. Non-entrants were labeled as having no main-bracket win. Both candidates used logistic regression and the same season splits; the second candidate added preseason rating.
 
 | Candidate | Input features | Reason for including it |
 |---|---|---|
@@ -76,7 +74,7 @@ The outcome is whether a team won at least one main-bracket game. Each row is on
 
 ### Walk-forward validation and final test
 
-Season 2020 is skipped because there was no tournament. Both candidates must use the same folds.
+Season 2020 was skipped because there was no tournament. Both candidates used the same folds.
 
 | Training seasons | Held-out season |
 |---|---:|
@@ -86,54 +84,43 @@ Season 2020 is skipped because there was no tournament. Both candidates must use
 | 2015–2019, 2021–2023 | 2024 |
 | Final fit: 2015–2019, 2021–2024 | Final test: 2025 |
 
-The model will be selected using validation results only. The selected model will be evaluated on the 2025 test season once. The 2026 estimates for Team A and Team C are forecasts; there are no 2026 tournament outcomes to score.
+We selected the model using validation results only. The selected model was evaluated on the 2025 test season once. The 2026 estimates for Team A and Team C are forecasts; there are no 2026 tournament outcomes to score.
 
 ### Validation results
 
-Report each candidate's Brier score for every validation season. Include the mean, sample standard deviation across seasons, min–max range, and mean train–validation gap. Lower Brier is better.
+Brier scores are averaged within each held-out season. The mean is the unweighted average of the four seasonal scores. Spread is the sample standard deviation across seasons. The train–validation gap is validation Brier minus training Brier, averaged across the four folds. Lower Brier is better.
 
 | Model | 2021 | 2022 | 2023 | 2024 | Mean | Spread (SD) | Min–max range | Mean train–validation gap |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Win-rate-only | TODO | TODO | TODO | TODO | TODO | TODO | TODO | TODO |
-| Win-rate-plus-rating | TODO | TODO | TODO | TODO | TODO | TODO | TODO | TODO |
+| Win-rate-only | 0.0668 | 0.0591 | 0.0633 | 0.0633 | 0.0632 | 0.0032 | 0.0077 | -0.0015 |
+| Win-rate-plus-rating | 0.0328 | 0.0388 | 0.0361 | 0.0447 | 0.0381 | 0.0050 | 0.0119 | 0.0002 |
 
-**Model selection:** TODO — state which model had the lower mean validation Brier and whether the result was consistent across the four folds.
+### Model selection
+
+**Win-rate-plus-rating** was selected because its mean validation Brier score (**0.0381**) was lower than the win-rate-only score (**0.0632**) by **0.0251**. It had the lower Brier score in **all four** validation seasons. Its seasonal spread was 0.0050, compared with 0.0032 for the win-rate-only model. The mean train–validation gaps were -0.0015 and 0.0002, respectively.
 
 ### Final 2025 test and 2026 forecasts
 
-**Selected model's 2025 test Brier:** TODO — report once, after model selection.
+After model selection, the win-rate-plus-rating model was fitted on 2015–2019 and 2021–2024 and evaluated once on the held-out 2025 team-seasons. Its test Brier score was **0.0425** (360 team-seasons). This result was not used to select the model.
+
+Both candidates were then fitted on labeled seasons through 2025 to make the planned 2026 forecasts. These are unscored probabilities, not observed tournament results.
 
 | Model | Team A 2026 forecast probability | Team C 2026 forecast probability |
 |---|---:|---:|
-| Win-rate-only | TODO | TODO |
-| Win-rate-plus-rating | TODO | TODO |
-
-These are forecasts, not scored results. Do not calculate a 2026 Brier score without the tournament outcomes.
+| Win-rate-only | 21.8% | 60.2% |
+| Win-rate-plus-rating | 80.1% | 4.6% |
 
 ### H2 verdict
 
-**Verdict:** TODO — supported, rejected, revised, or unresolved.
+**H2 was supported.** Adding preseason rating improved the mean validation Brier score from **0.0632** to **0.0381**, with the win-rate-plus-rating model scoring lower in all four validation seasons. Its 2025 final-test Brier score was **0.0425**. The 2026 Team A and Team C probabilities are forecasts only and cannot be checked against tournament outcomes in this dataset.
 
-**Evidence:** TODO — compare the candidates' validation Brier scores, spread across folds, train–validation gaps, and the 2025 test score. State whether adding preseason rating improved prediction.
+H2 run details and outputs are in [H2 results](H2/). The exported MLflow table contains **11 runs**: eight walk-forward validation runs, one selected-model final-test run, and two unscored forecast runs. The folder includes the run table, fold-level scores, predictions, forecast files, summary, and figures.
 
 ## MLflow run records
 
-The exported run tables are the readable summaries of the experiments. Each row identifies a run and includes its run ID, parameters, metrics, and artifact reference. H1's local tracking database and logged files are in `prepared_data/H1/mlflow.db` and `prepared_data/H1/mlartifacts/`; its exported table is [`h1_mlflow_runs.csv`](H1/h1_mlflow_runs.csv). Add H2's tracking records and exported table after its experiment is complete.
+The exported run tables list run names, run IDs, parameters, metrics, and artifact locations. H1's local tracking database and logged files are in `mlflow/H1/mlflow.db` and `mlflow/H1/mlartifacts/`; its exported table is [`h1_mlflow_runs.csv`](H1/h1_mlflow_runs.csv). H2's local tracking database and artifacts are in `mlflow/H2/`; its exported table is [`h2_mlflow_runs.csv`](H2/h2_mlflow_runs.csv).
 
 | Hypothesis | Exported run table | Status |
 |---|---|---|
-| H1 | [`results/H1/h1_mlflow_runs.csv`](H1/h1_mlflow_runs.csv) | Recorded: 13 runs |
-| H2 | `results/H2/h2_mlflow_runs.csv` | TODO — export and commit after running H2 |
-
-## M2 completion checklist
-
-- [x] H1 candidates, fixed settings, and one-factor comparison documented.
-- [x] H1 walk-forward validation results, spread, train–validation gap, selected model, and one-time 2026 test score recorded.
-- [x] H1 shared-situation comparison and qualified verdict recorded.
-- [x] H1 MLflow run table and experiment outputs included.
-- [ ] H2 candidates and experiment rationale reviewed against the plan.
-- [ ] H2 walk-forward validation results, spread, and train–validation gaps recorded for both candidates.
-- [ ] H2 model selected from validation results, then scored once on the 2025 test set.
-- [ ] H2 forecast estimates and verdict recorded; H2 MLflow run table exported and committed.
-- [x] Hypothesis wording changes since M1 recorded in [`experiment.md`](../experiment.md) as unchanged.
-- [ ] Confirm the complete repository is committed and tag it `M2` by the end of November 11, 2026.
+| H1 | [`h1_mlflow_runs.csv`](H1/h1_mlflow_runs.csv) | Recorded: 13 runs |
+| H2 | [`h2_mlflow_runs.csv`](H2/h2_mlflow_runs.csv) | Recorded: 11 runs |

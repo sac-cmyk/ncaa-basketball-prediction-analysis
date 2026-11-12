@@ -1,0 +1,361 @@
+season,team_id,team_name,brief_alias,model,forecast_probability_at_least_one_main_bracket_win
+2026,1101,Abernathy State,,Win-rate-plus-rating,0.047352232416019886
+2026,1102,Alder,,Win-rate-plus-rating,0.0002794220279560258
+2026,1103,Aldridge,,Win-rate-plus-rating,0.001180468584358932
+2026,1104,Ashby,,Win-rate-plus-rating,0.004106690152184194
+2026,1105,Ashford,Team A,Win-rate-plus-rating,0.8007146690344861
+2026,1106,Ashgrove State,,Win-rate-plus-rating,0.014181002107420843
+2026,1107,Ashland State,,Win-rate-plus-rating,0.0002596670314618515
+2026,1108,Ashworth,,Win-rate-plus-rating,1.1910442094858808e-05
+2026,1109,Barrow,,Win-rate-plus-rating,0.0001701067503779151
+2026,1110,Bayfield,,Win-rate-plus-rating,0.0025765938721801617
+2026,1111,Bellamy State,,Win-rate-plus-rating,0.001512458227176102
+2026,1112,Bexley State,,Win-rate-plus-rating,0.0013773512712578074
+2026,1113,Bexley-Whitcomb,,Win-rate-plus-rating,0.006472950900477046
+2026,1114,Birchfield,,Win-rate-plus-rating,0.00015281046382632175
+2026,1115,Blakely,,Win-rate-plus-rating,0.007612674339661303
+2026,1116,Bramley,,Win-rate-plus-rating,0.02045174572044258
+2026,1117,Brennan,,Win-rate-plus-rating,8.348721435260733e-05
+2026,1118,Brennan State,,Win-rate-plus-rating,5.019431845474708e-05
+2026,1119,Bristow Tech,,Win-rate-plus-rating,0.9622218336940429
+2026,1120,Calloway State,Team C,Win-rate-plus-rating,0.04620059345280664
+2026,1121,Carlisle State,,Win-rate-plus-rating,0.00035782386362618777
+2026,1122,Carrington,,Win-rate-plus-rating,0.05503751299975036
+2026,1123,Central Aldridge,,Win-rate-plus-rating,8.486331070929516e-05
+2026,1124,Central Corbin,,Win-rate-plus-rating,0.00836848843804317
+2026,1125,Central Dunbar,,Win-rate-plus-rating,0.00105827458701481
+2026,1126,Central Fairview,,Win-rate-plus-rating,4.554974993265084e-05
+2026,1127,Central Hadley,,Win-rate-plus-rating,0.011089831910060315
+2026,1128,Central Kilbride,,Win-rate-plus-rating,6.918115618099559e-05
+2026,1129,Central Langford,,Win-rate-plus-rating,3.2255717972355945e-07
+2026,1130,Central Morrow,,Win-rate-plus-rating,7.329025987491597e-07
+2026,1131,Central Oakhurst,,Win-rate-plus-rating,2.3702051941037857e-05
+2026,1132,Central Stratton ,,Win-rate-plus-rating,3.0129492787579647e-06
+2026,1133,Coleridge State ,,Win-rate-plus-rating,0.015899924179356716
+2026,1134,Colfax A&M,,Win-rate-plus-rating,0.001353598337385156
+2026,1135,Colfax-Haverly ,,Win-rate-plus-rating,0.12530822063850813
+2026,1136,Copeland,,Win-rate-plus-rating,0.12425092646071162
+2026,1137,Corbin Tech,,Win-rate-plus-rating,0.000787799270273662
+2026,1138,Cranston,,Win-rate-plus-rating,0.00041187637774907067
+2026,1139,Crestwood,,Win-rate-plus-rating,0.0005069845915052375
+2026,1140,Crestwood State,,Win-rate-plus-rating,0.14815258994450986
+2026,1141,Cumberland State,,Win-rate-plus-rating,0.17461365376050625
+2026,1142,Dalton A&M,,Win-rate-plus-rating,0.02298961532322752
+2026,1143,Dalton State,,Win-rate-plus-rating,0.056254976246524514
+2026,1144,Danforth,,Win-rate-plus-rating,0.0001862131090609657
+2026,1145,Danforth A&M,,Win-rate-plus-rating,0.2766760867543532
+2026,1146,Darby College,,Win-rate-plus-rating,0.024190144126791
+2026,1147,Delmar,,Win-rate-plus-rating,0.0005366517572370285
+2026,1148,Denholm State,,Win-rate-plus-rating,1.8530871982870296e-05
+2026,1149,Dorrance A&M,,Win-rate-plus-rating,0.09902623664152076
+2026,1150,Dorrance State,,Win-rate-plus-rating,0.10027844371142867
+2026,1151,Dunbar ,,Win-rate-plus-rating,0.0012464246793690036
+2026,1152,Dunhill,,Win-rate-plus-rating,5.980718218570932e-06
+2026,1153,Dunmoor,,Win-rate-plus-rating,4.748235811574252e-05
+2026,1154,Dunmore,,Win-rate-plus-rating,0.011811286846643697
+2026,1155,Dunmore-Sedgwick,,Win-rate-plus-rating,1.9148402682946364e-07
+2026,1156,East Fairhaven,,Win-rate-plus-rating,0.09403345316145272
+2026,1157,East Garrison,,Win-rate-plus-rating,0.23713796418737923
+2026,1158,East Gilford,,Win-rate-plus-rating,0.46691947151230573
+2026,1159,East Harlow,,Win-rate-plus-rating,2.3414105861283634e-06
+2026,1160,East Kittredge,,Win-rate-plus-rating,0.00034232130562014115
+2026,1161,East Lennox,,Win-rate-plus-rating,2.275229457371608e-05
+2026,1162,East Morrow,,Win-rate-plus-rating,0.4740519677951518
+2026,1163,East Norcross,,Win-rate-plus-rating,2.001120227906721e-06
+2026,1164,East Northfield,,Win-rate-plus-rating,0.005770640281518934
+2026,1165,East Ogden,,Win-rate-plus-rating,0.05667151157715269
+2026,1166,East Quarles,,Win-rate-plus-rating,7.008440101940732e-07
+2026,1167,East Westover,,Win-rate-plus-rating,0.3814001453340068
+2026,1168,Eastern Crestwood,,Win-rate-plus-rating,5.801748273719397e-06
+2026,1169,Eastern Dalton,,Win-rate-plus-rating,0.05955016962852778
+2026,1170,Eastern Fulton,,Win-rate-plus-rating,0.08119577279621584
+2026,1171,Eastern Gresham,,Win-rate-plus-rating,0.0007447147601603292
+2026,1172,Eastern Hollis,,Win-rate-plus-rating,7.129173803520813e-06
+2026,1173,Eastern Kinsey,,Win-rate-plus-rating,0.0012905326913407343
+2026,1174,Eastern Rutledge,,Win-rate-plus-rating,6.426156217047112e-06
+2026,1175,Eastern Summerville,,Win-rate-plus-rating,0.0002420593659980961
+2026,1176,Eastern Tamworth,,Win-rate-plus-rating,0.0001699978274408523
+2026,1177,Eastern Weston ,,Win-rate-plus-rating,0.0016359020417505599
+2026,1178,Easton,,Win-rate-plus-rating,0.019200700799717176
+2026,1179,Easton State,,Win-rate-plus-rating,0.05611800372248559
+2026,1180,Eldridge,,Win-rate-plus-rating,0.00039386417108973034
+2026,1181,Elkin,,Win-rate-plus-rating,0.06241782749582948
+2026,1182,Ellison State ,,Win-rate-plus-rating,0.5397933261191574
+2026,1183,Emmett,,Win-rate-plus-rating,1.4830427507731266e-05
+2026,1184,Everly,,Win-rate-plus-rating,0.04310768284440789
+2026,1185,Everly State,,Win-rate-plus-rating,0.17192895094664215
+2026,1186,Everton State,,Win-rate-plus-rating,0.0002075024864820321
+2026,1187,Fairbank,,Win-rate-plus-rating,0.0005651433332958655
+2026,1188,Fairbank State ,,Win-rate-plus-rating,0.24213458584309872
+2026,1189,Fairhaven,,Win-rate-plus-rating,5.735302204340654e-05
+2026,1190,Fairlee State,,Win-rate-plus-rating,0.00014561823683446757
+2026,1191,Fairview State,,Win-rate-plus-rating,0.0009041941760033644
+2026,1192,Fairview-Merritt,,Win-rate-plus-rating,0.0009346070990894187
+2026,1193,Farrow,,Win-rate-plus-rating,0.0007034532554989669
+2026,1194,Fenwick,,Win-rate-plus-rating,0.029814281404592684
+2026,1195,Fielding Christian,,Win-rate-plus-rating,0.0020224870728843187
+2026,1196,Foxworth,,Win-rate-plus-rating,0.0010797812333772402
+2026,1197,Foxworth State,,Win-rate-plus-rating,0.0002398804333110324
+2026,1198,Fulton Baptist,,Win-rate-plus-rating,0.11478847008920463
+2026,1199,Fulton State,,Win-rate-plus-rating,8.414904871924742e-06
+2026,1200,Galloway Tech,,Win-rate-plus-rating,0.04893073803322249
+2026,1201,Garrison,,Win-rate-plus-rating,0.02985643431806841
+2026,1202,Gilford,,Win-rate-plus-rating,7.088461417362717e-05
+2026,1203,Glenhaven State,,Win-rate-plus-rating,0.01636925176754279
+2026,1204,Goodwin A&M,,Win-rate-plus-rating,9.883100543022665e-06
+2026,1205,Grafton College,,Win-rate-plus-rating,0.0038092163973833084
+2026,1206,Grafton State,,Win-rate-plus-rating,4.952138336818271e-05
+2026,1207,Graydon State,,Win-rate-plus-rating,1.3654644891843105e-06
+2026,1208,Greenfield ,,Win-rate-plus-rating,3.1779170566407314e-06
+2026,1209,Greenfield State,,Win-rate-plus-rating,0.0008184677076222952
+2026,1210,Gresham,,Win-rate-plus-rating,0.00827513571941176
+2026,1211,Greystone A&M,,Win-rate-plus-rating,2.4861969846807435e-06
+2026,1212,Greystone Baptist,,Win-rate-plus-rating,0.01702421764686596
+2026,1213,Hadley State,,Win-rate-plus-rating,6.125337979952465e-05
+2026,1214,Halston,,Win-rate-plus-rating,0.13032378605173336
+2026,1215,Halston-Northam,,Win-rate-plus-rating,0.0025460442921126656
+2026,1216,Hampton Falls,,Win-rate-plus-rating,0.0015242243966948775
+2026,1217,Harlow State,,Win-rate-plus-rating,0.0017583748362697922
+2026,1218,Harlow-Weston,,Win-rate-plus-rating,2.644838817347567e-05
+2026,1219,Harrington State,,Win-rate-plus-rating,0.002224990478062527
+2026,1220,Hartwell A&M,,Win-rate-plus-rating,5.7822506198373944e-05
+2026,1221,Hartwell State,,Win-rate-plus-rating,0.008335253237798924
+2026,1222,Haverly,,Win-rate-plus-rating,0.00018955041541145139
+2026,1223,Hawthorne,,Win-rate-plus-rating,0.004446846121098463
+2026,1224,Hazelton Tech,,Win-rate-plus-rating,0.00426727177524148
+2026,1225,Hensley State,,Win-rate-plus-rating,0.0045349686271579015
+2026,1226,Hillcrest,,Win-rate-plus-rating,0.09219807903604305
+2026,1227,Hollis A&M,,Win-rate-plus-rating,0.0004981643758276253
+2026,1228,Hollis State,,Win-rate-plus-rating,0.009604684935660083
+2026,1229,Holloway,,Win-rate-plus-rating,0.0006630032851237216
+2026,1230,Ingram A&M,,Win-rate-plus-rating,0.1711019527029225
+2026,1231,Jessup State,,Win-rate-plus-rating,0.0004285114986237018
+2026,1232,Kendall,,Win-rate-plus-rating,2.0182234518599633e-05
+2026,1233,Kessler,,Win-rate-plus-rating,0.9957609040723469
+2026,1234,Keswick State,,Win-rate-plus-rating,0.009211378450562932
+2026,1235,Kilbride State,,Win-rate-plus-rating,6.1808705760666525e-09
+2026,1236,Kingsford State,,Win-rate-plus-rating,0.01304512448191191
+2026,1237,Kingsley Baptist,,Win-rate-plus-rating,0.36213531830630397
+2026,1238,Kingsley State,,Win-rate-plus-rating,0.003819381716830544
+2026,1239,Kingsley-Danforth,,Win-rate-plus-rating,0.0003012413396665188
+2026,1240,Kinsey,,Win-rate-plus-rating,0.026249670890310082
+2026,1241,Kinsey-Northgate,,Win-rate-plus-rating,0.15539978113145106
+2026,1242,Kirkland A&M,,Win-rate-plus-rating,0.19258607554021528
+2026,1243,Kittredge State,,Win-rate-plus-rating,0.0007906537800116157
+2026,1244,Lakeport Baptist ,,Win-rate-plus-rating,0.00016615320591412182
+2026,1245,Langford State,,Win-rate-plus-rating,3.536103190896652e-05
+2026,1246,Larkin State,,Win-rate-plus-rating,8.135653089001755e-05
+2026,1247,Larkin-Linwood,,Win-rate-plus-rating,0.2128469668919403
+2026,1248,Lennox,,Win-rate-plus-rating,0.11901843705131077
+2026,1249,Lindale,,Win-rate-plus-rating,0.20022537460441966
+2026,1250,Lindale-Tamworth,,Win-rate-plus-rating,0.6104177851256385
+2026,1251,Linwood Christian,,Win-rate-plus-rating,0.004775751206531859
+2026,1252,Linwood-Tolliver,,Win-rate-plus-rating,0.022780239477485954
+2026,1253,Lockwood,,Win-rate-plus-rating,0.0007976793686068338
+2026,1254,Loring,,Win-rate-plus-rating,0.5672983596778416
+2026,1255,Lyndhurst,,Win-rate-plus-rating,1.0504956245898472e-06
+2026,1256,Mansfield,,Win-rate-plus-rating,0.016357221882597035
+2026,1257,Mansfield State,,Win-rate-plus-rating,0.0035998720222009243
+2026,1258,Marlow State,,Win-rate-plus-rating,1.4586694046070913e-09
+2026,1259,Marston,,Win-rate-plus-rating,6.326763165061506e-05
+2026,1260,Marston A&M,,Win-rate-plus-rating,0.001412911458935063
+2026,1261,Mayfield,,Win-rate-plus-rating,0.23541587428833585
+2026,1262,Medford State,,Win-rate-plus-rating,6.642083703034873e-06
+2026,1263,Merritt State,,Win-rate-plus-rating,0.0026477359357976373
+2026,1264,Milford State,,Win-rate-plus-rating,0.0003110950700615214
+2026,1265,Morrow A&M,,Win-rate-plus-rating,0.0004333710005933266
+2026,1266,Mount St. Malachy,,Win-rate-plus-rating,3.499358558970551e-05
+2026,1267,Neville A&M,,Win-rate-plus-rating,0.032090034226774096
+2026,1268,Neville State,,Win-rate-plus-rating,0.5212743459212702
+2026,1269,Newcomb State,,Win-rate-plus-rating,0.0028591661405011092
+2026,1270,Newell State,,Win-rate-plus-rating,1.5596425563964898e-05
+2026,1271,Norcross State,,Win-rate-plus-rating,0.038478120985659774
+2026,1272,North Ashby,,Win-rate-plus-rating,0.002786189879709772
+2026,1273,North Carlisle,,Win-rate-plus-rating,0.027784715726986795
+2026,1274,North Corbin,,Win-rate-plus-rating,6.705542194354967e-05
+2026,1275,North Dunhill,,Win-rate-plus-rating,0.0010199033658237087
+2026,1276,North Ellison,,Win-rate-plus-rating,0.00011205397690385194
+2026,1277,North Farrow,,Win-rate-plus-rating,0.004201043509091441
+2026,1278,North Ingram,,Win-rate-plus-rating,0.43329429997387137
+2026,1279,North Jessup,,Win-rate-plus-rating,2.412690976392809e-05
+2026,1280,North Kilbride,,Win-rate-plus-rating,0.0005820013110770934
+2026,1281,North Marston,,Win-rate-plus-rating,8.937970936219104e-05
+2026,1282,North Mayfield,,Win-rate-plus-rating,0.00168993055036752
+2026,1283,North Oakley,,Win-rate-plus-rating,0.036932631394931255
+2026,1284,North Pickering,,Win-rate-plus-rating,0.9797618259512102
+2026,1285,North Pinehurst,,Win-rate-plus-rating,0.036932631394931255
+2026,1286,North Ridgeway,,Win-rate-plus-rating,3.873131396091505e-06
+2026,1287,North Wexford,,Win-rate-plus-rating,4.898156563095398e-05
+2026,1288,Northam State,,Win-rate-plus-rating,5.559617123966273e-05
+2026,1289,Northam-Dunmoor,,Win-rate-plus-rating,3.946223337901796e-06
+2026,1290,Northern Bayfield,,Win-rate-plus-rating,0.001738927577161084
+2026,1291,Northern Copeland,,Win-rate-plus-rating,0.00012781934312273882
+2026,1292,Northern Galloway,,Win-rate-plus-rating,0.279515319106987
+2026,1293,Northern Halston ,,Win-rate-plus-rating,2.8735963021632625e-05
+2026,1294,Northern Kessler,,Win-rate-plus-rating,0.00028063557710153317
+2026,1295,Northern Keswick,,Win-rate-plus-rating,0.07139527129717953
+2026,1296,Northern Prescott,,Win-rate-plus-rating,2.5018606279736415e-07
+2026,1297,Northern Ridgeway,,Win-rate-plus-rating,0.0003645094471840655
+2026,1298,Northern Whitcomb,,Win-rate-plus-rating,0.0004518274791401613
+2026,1299,Northfield State,,Win-rate-plus-rating,1.60654015838117e-05
+2026,1300,Northgate Christian,,Win-rate-plus-rating,2.521855198387193e-05
+2026,1301,Norwood,,Win-rate-plus-rating,0.04722919961674782
+2026,1302,Norwood State,,Win-rate-plus-rating,0.0009005263321553696
+2026,1303,Oakhurst State,,Win-rate-plus-rating,0.0024027444285586565
+2026,1304,Oakley ,,Win-rate-plus-rating,0.0001237228724951643
+2026,1305,Ogden State,,Win-rate-plus-rating,0.09021374406353334
+2026,1306,Orland,,Win-rate-plus-rating,5.1208491981355776e-05
+2026,1307,Orland State,,Win-rate-plus-rating,0.01011820345589899
+2026,1308,Ormsby,,Win-rate-plus-rating,0.568008069199643
+2026,1309,Ormsby A&M,,Win-rate-plus-rating,2.5752206905478746e-05
+2026,1310,Ormsby State,,Win-rate-plus-rating,1.3664795800902859e-06
+2026,1311,Osgood,,Win-rate-plus-rating,0.25881590831119405
+2026,1312,Overton,,Win-rate-plus-rating,0.2713695244943362
+2026,1313,Oxley State,,Win-rate-plus-rating,0.6151462831043916
+2026,1314,Parkhurst,,Win-rate-plus-rating,0.0015074310902094582
+2026,1315,Payton State ,,Win-rate-plus-rating,0.0008822496796040419
+2026,1316,Pemberton,,Win-rate-plus-rating,3.1779170566407314e-06
+2026,1317,Pemberton State,,Win-rate-plus-rating,0.014598601856043999
+2026,1318,Pendleton,,Win-rate-plus-rating,0.0278049123710945
+2026,1319,Penrose,,Win-rate-plus-rating,0.007722012190748473
+2026,1320,Penrose State,,Win-rate-plus-rating,2.272188144146284e-05
+2026,1321,Petersfield Baptist,,Win-rate-plus-rating,0.0003945669802427263
+2026,1322,Petersfield-Darby ,,Win-rate-plus-rating,0.030278095886442924
+2026,1323,Pickering,,Win-rate-plus-rating,0.01156500292809598
+2026,1324,Pinehurst State,,Win-rate-plus-rating,0.2463285945320281
+2026,1325,Pomeroy,,Win-rate-plus-rating,0.0005358783867996174
+2026,1326,Prescott State,,Win-rate-plus-rating,1.530832359147222e-05
+2026,1327,Pryor,,Win-rate-plus-rating,0.002493535329384971
+2026,1328,Pryor-Bristow,,Win-rate-plus-rating,0.06636080477279882
+2026,1329,Quarles,,Win-rate-plus-rating,0.011132870942792883
+2026,1330,Radcliffe,,Win-rate-plus-rating,1.3552541098133116e-07
+2026,1331,Radcliffe State,,Win-rate-plus-rating,0.20203588493865596
+2026,1332,Ramsey State,,Win-rate-plus-rating,2.594351842402875e-07
+2026,1333,Redfield,,Win-rate-plus-rating,0.011792514041433617
+2026,1334,Redmond,,Win-rate-plus-rating,7.372312591971994e-05
+2026,1335,Redmond-Hawthorne,,Win-rate-plus-rating,4.025228731942716e-06
+2026,1336,Rexford ,,Win-rate-plus-rating,0.0006216483540590094
+2026,1337,Ridgeway,,Win-rate-plus-rating,0.09459327824028897
+2026,1338,Riverton State,,Win-rate-plus-rating,0.21323540079293032
+2026,1339,Rockport Christian,,Win-rate-plus-rating,4.2137733549326296e-05
+2026,1340,Rosedale State,,Win-rate-plus-rating,0.08429789091789615
+2026,1341,Rowley,,Win-rate-plus-rating,0.16333656817002268
+2026,1342,Rutledge Christian,,Win-rate-plus-rating,0.00010669048436163024
+2026,1343,Saint Brendan,,Win-rate-plus-rating,0.24757236128628934
+2026,1344,Saint Colman,,Win-rate-plus-rating,0.8433586323739009
+2026,1345,Saint Finian,,Win-rate-plus-rating,0.11511465620831554
+2026,1346,Sanford State,,Win-rate-plus-rating,0.029814281404592684
+2026,1347,Sanford Tech,,Win-rate-plus-rating,2.0905506678368e-06
+2026,1348,Sedgwick College,,Win-rate-plus-rating,0.19412835325108518
+2026,1349,Sedgwick-Holloway,,Win-rate-plus-rating,0.14080855584997493
+2026,1350,Selby A&M,,Win-rate-plus-rating,8.163484274374519e-08
+2026,1351,Selby-Shelby,,Win-rate-plus-rating,0.07969401739221113
+2026,1352,Shelby,,Win-rate-plus-rating,4.363760800104529e-05
+2026,1353,Somerset State,,Win-rate-plus-rating,0.5590531181505817
+2026,1354,South Bellamy,,Win-rate-plus-rating,0.10615313322804468
+2026,1355,South Danforth,,Win-rate-plus-rating,0.0070212858125159325
+2026,1356,South Dunmore,,Win-rate-plus-rating,0.10262217700143778
+2026,1357,South Elkin,,Win-rate-plus-rating,0.056763068709574614
+2026,1358,South Emmett,,Win-rate-plus-rating,0.04813407070370885
+2026,1359,South Farrow,,Win-rate-plus-rating,0.09787811267395413
+2026,1360,South Hartwell,,Win-rate-plus-rating,0.00010411107893644736
+2026,1361,South Lennox,,Win-rate-plus-rating,0.00026727333125230976
+2026,1362,South Orland,,Win-rate-plus-rating,0.39893446546199934
+2026,1363,South Trenholm,,Win-rate-plus-rating,0.0007343064794447451
+2026,1364,South Westover,,Win-rate-plus-rating,0.9704986161836117
+2026,1365,Southeast Abernathy,,Win-rate-plus-rating,0.0986319786598588
+2026,1366,Southeast Alder,,Win-rate-plus-rating,0.08170330888956384
+2026,1367,Southeast Birchfield,,Win-rate-plus-rating,0.0013431475348837313
+2026,1368,Southeast Copeland,,Win-rate-plus-rating,0.0986319786598588
+2026,1369,Southeast Holloway,,Win-rate-plus-rating,0.0006587128618352542
+2026,1370,Southeast Marlow,,Win-rate-plus-rating,2.7527163530312744e-05
+2026,1371,Southeast Milford,,Win-rate-plus-rating,0.0005567210810901136
+2026,1372,Southeast Northgate,,Win-rate-plus-rating,3.3140227546008302e-06
+2026,1373,Southeast Rowley,,Win-rate-plus-rating,4.636602572384376e-05
+2026,1374,Southern Carlisle,,Win-rate-plus-rating,0.9264993256702666
+2026,1375,Southern Fairlee,,Win-rate-plus-rating,0.012997591843483236
+2026,1376,Southern Glenhaven,,Win-rate-plus-rating,0.0001242333724088702
+2026,1377,Southern Graydon,,Win-rate-plus-rating,0.0025906679757173733
+2026,1378,Southern Kittredge,,Win-rate-plus-rating,2.592797534041329e-05
+2026,1379,Southern Lakeport,,Win-rate-plus-rating,0.003211365920476882
+2026,1380,Southern Lyndhurst,,Win-rate-plus-rating,2.886350778853978e-05
+2026,1381,Southern Marlow,,Win-rate-plus-rating,0.00029146619886967983
+2026,1382,Southern Newcomb,,Win-rate-plus-rating,0.024688233156028527
+2026,1383,Southern Rockport,,Win-rate-plus-rating,0.11035951466743661
+2026,1384,Southern Tolliver,,Win-rate-plus-rating,0.09034089369246448
+2026,1385,Southern Varney,,Win-rate-plus-rating,0.00020503135773228203
+2026,1386,Southern Wilder,,Win-rate-plus-rating,2.9468154521616106e-08
+2026,1387,St. Kieran's,,Win-rate-plus-rating,0.138212700998746
+2026,1388,St. Ronan,,Win-rate-plus-rating,0.0001683673195467017
+2026,1389,Stanwick,,Win-rate-plus-rating,0.0018678173597165258
+2026,1390,Sterling,,Win-rate-plus-rating,0.7877495137856679
+2026,1391,Sterling A&M,,Win-rate-plus-rating,0.008668154817363705
+2026,1392,Sterling-Kittredge,,Win-rate-plus-rating,0.003724398187975936
+2026,1393,Stockbridge State,,Win-rate-plus-rating,0.886711384439763
+2026,1394,Stockbridge-Bradwell,,Win-rate-plus-rating,3.548994723271636e-05
+2026,1395,Stratton Christian,,Win-rate-plus-rating,4.067231598115312e-05
+2026,1396,Summerville State,,Win-rate-plus-rating,0.0004932650562478971
+2026,1397,Sutton State,,Win-rate-plus-rating,0.6171608950127928
+2026,1398,Tamworth,,Win-rate-plus-rating,0.01826062183012336
+2026,1399,Templeton,,Win-rate-plus-rating,1.0957864779444311e-05
+2026,1400,Thayer A&M,,Win-rate-plus-rating,0.0009487172585253026
+2026,1401,Thayer State,,Win-rate-plus-rating,0.005118309109594542
+2026,1402,Thayer-Stockbridge,,Win-rate-plus-rating,0.0021589974239839293
+2026,1403,Thornbury,,Win-rate-plus-rating,0.037628632881104726
+2026,1404,Thornton,,Win-rate-plus-rating,6.675790993557774e-09
+2026,1405,Thornton A&M,,Win-rate-plus-rating,1.7968676089287055e-05
+2026,1406,Thornton-Cumberland,,Win-rate-plus-rating,7.004280762504684e-06
+2026,1407,Tilden State,,Win-rate-plus-rating,0.048358104809924425
+2026,1408,Tolliver,,Win-rate-plus-rating,0.22621067814715212
+2026,1409,Tolliver State,,Win-rate-plus-rating,0.005494038507303876
+2026,1410,Tremont State,,Win-rate-plus-rating,9.27909248133229e-08
+2026,1411,Trenholm College ,,Win-rate-plus-rating,0.0006039630305141445
+2026,1412,Underhill A&M,,Win-rate-plus-rating,0.1001241481089429
+2026,1413,Upton Christian,,Win-rate-plus-rating,3.0433804716076853e-05
+2026,1414,Upton State,,Win-rate-plus-rating,0.00041187637774907067
+2026,1415,Vance,,Win-rate-plus-rating,0.15585734512104416
+2026,1416,Varney,,Win-rate-plus-rating,0.17256010601430916
+2026,1417,Vickery State,,Win-rate-plus-rating,0.0019211939074749126
+2026,1418,Wakefield Baptist,,Win-rate-plus-rating,1.167881258197012e-06
+2026,1419,Waverly Baptist,,Win-rate-plus-rating,0.009855529172634506
+2026,1420,Waverly State,,Win-rate-plus-rating,1.5596425563964898e-05
+2026,1421,Wendover State,,Win-rate-plus-rating,0.0006506250049355351
+2026,1422,West Abernathy,,Win-rate-plus-rating,0.18749798716408234
+2026,1423,West Ashby,,Win-rate-plus-rating,3.455577994871259e-05
+2026,1424,West Ashgrove ,,Win-rate-plus-rating,1.188050835855098e-06
+2026,1425,West Ashland,,Win-rate-plus-rating,1.967671938623662e-07
+2026,1426,West Delmar,,Win-rate-plus-rating,0.00016787126384143873
+2026,1427,West Galloway,,Win-rate-plus-rating,0.9359445860637399
+2026,1428,West Gilford,,Win-rate-plus-rating,0.046908161238572735
+2026,1429,West Kessler ,,Win-rate-plus-rating,0.6169842870712114
+2026,1430,West Medford,,Win-rate-plus-rating,0.0018021727596034924
+2026,1431,West Pomeroy,,Win-rate-plus-rating,0.0013928575164870048
+2026,1432,West Rowley,,Win-rate-plus-rating,0.8043651530248559
+2026,1433,West Shelby,,Win-rate-plus-rating,0.0017790013182393957
+2026,1434,West Somerset,,Win-rate-plus-rating,0.003389709590621175
+2026,1435,West Wakefield,,Win-rate-plus-rating,0.0003121983715863278
+2026,1436,West Wendover,,Win-rate-plus-rating,0.19118111602992566
+2026,1437,Western Darby,,Win-rate-plus-rating,0.0018721131427478558
+2026,1438,Western Ellison,,Win-rate-plus-rating,0.0656802958723171
+2026,1439,Western Harrington,,Win-rate-plus-rating,0.0019686197525609793
+2026,1440,Western Hensley ,,Win-rate-plus-rating,1.3520602856362157e-07
+2026,1441,Western Kingsford,,Win-rate-plus-rating,0.5109869731618282
+2026,1442,Western Merritt,,Win-rate-plus-rating,0.12961472157383672
+2026,1443,Western Newell,,Win-rate-plus-rating,0.006035785005670014
+2026,1444,Western Parkhurst,,Win-rate-plus-rating,0.0017580937347302776
+2026,1445,Western Ramsey,,Win-rate-plus-rating,0.0071916649186144245
+2026,1446,Western Redfield,,Win-rate-plus-rating,0.5341734635443187
+2026,1447,Western Templeton,,Win-rate-plus-rating,0.8856360566019761
+2026,1448,Weston Christian,,Win-rate-plus-rating,4.465133940544241e-07
+2026,1449,Westover State,,Win-rate-plus-rating,8.483611519028152e-08
+2026,1450,Wexford,,Win-rate-plus-rating,0.697253732435612
+2026,1451,Whitcomb,,Win-rate-plus-rating,7.733540297793265e-06
+2026,1452,Whitcomb State,,Win-rate-plus-rating,3.688358677237417e-05
+2026,1453,Wilder,,Win-rate-plus-rating,0.060546329723577645
+2026,1454,Winslow State,,Win-rate-plus-rating,0.12560173958909257
+2026,1455,Winslow-Thayer,,Win-rate-plus-rating,0.006165089729588451
+2026,1456,Wyndham,,Win-rate-plus-rating,1.2613672740506746e-06
+2026,1457,Yarborough,,Win-rate-plus-rating,0.002516144814386323
+2026,1458,Yardley,,Win-rate-plus-rating,2.360557918876075e-06
+2026,1459,Yardley State,,Win-rate-plus-rating,0.04904528632456735
+2026,1460,Yates Tech,,Win-rate-plus-rating,0.0001422409318504367
