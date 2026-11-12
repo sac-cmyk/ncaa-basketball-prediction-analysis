@@ -42,7 +42,7 @@ The opponent-adjusted model had a lower Brier score in all five validation seaso
 
 ### Final test
 
-The selected opponent-adjusted model was fit on seasons 2015–2019 and 2021–2025, then scored once on the held-out 2026 games. Its 2026 Brier score was **0.2003**. This test score was not used to choose the model.
+The selected opponent-adjusted model was fit on seasons 2015–2019 and 2021–2025. Its reported 2026 Brier score was 0.2003. The notebook rerun logged this test twice; both runs produced the same score, and the test result was not used to choose the model.
 
 ### Team A and Team C comparison
 
@@ -59,7 +59,7 @@ The raw 2026 regular-season win rates were **70.0% for Team A** and **85.7% for 
 
 **H1 was supported.** On the same 58 opponent-and-location situations, the opponent-adjusted model estimated Team A’s average chance of winning at **71.4%**, compared with **51.0%** for Team C. Adding opponent strength also improved the model’s validation predictions: the mean Brier score fell from **0.2295** for the baseline to **0.2013** for the opponent-adjusted model, which had a lower score in all five validation seasons. The baseline already favored Team A (**61.3% vs. 51.0%**); adding opponent strength made the comparison more informative and increased Team A’s estimated lead from **10.3 to 20.4 percentage points**.
 
-H1 run details and outputs are in [H1 results](H1/). The exported MLflow table contains **13 runs**. The run table, fold-level scores, final-test predictions, comparison predictions, comparison summary, and figures are committed alongside this report.
+H1 run details and outputs are in [H1 results](H1/). The MLflow database contains **26 runs** because the notebook was rerun; the exported table contains the 13 runs used for this report. The run table, fold-level scores, final-test predictions, comparison predictions, comparison summary, and figures are committed alongside this report.
 
 ## H2 — Does Preseason Rating Add Useful Information?
 
@@ -122,5 +122,7 @@ The exported run tables list run names, run IDs, parameters, metrics, and artifa
 
 | Hypothesis | Exported run table | Status |
 |---|---|---|
-| H1 | [`h1_mlflow_runs.csv`](H1/h1_mlflow_runs.csv) | Recorded: 13 runs |
-| H2 | [`h2_mlflow_runs.csv`](H2/h2_mlflow_runs.csv) | Recorded: 11 runs |
+| H1 | [`h1_mlflow_runs.csv`](H1/h1_mlflow_runs.csv) | 13 rows exported; 26 runs in the database, including the duplicate set|
+| H2 | [`h2_mlflow_runs.csv`](H2/h2_mlflow_runs.csv) | 11 runs |
+
+Run note: The H1 notebook was accidentally rerun, so MLflow contains a duplicate set of the 13 H1 runs. The duplicate runs did not change the model selection or reported results. The 2026 test score was therefore logged twice; the reported Brier score is the same in both runs.

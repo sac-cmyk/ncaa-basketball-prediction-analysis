@@ -50,6 +50,7 @@ Team C has historically been a weak team, but it is now winning 85% of its games
 - `notebooks/exploration.ipynb` — Explores the headline win-rate comparison and related patterns.
 - `notebooks/feature_engineering_H1.ipynb` and `notebooks/feature_engineering_H2.ipynb` — Prepare the model-ready data and explain the rows, features, outcomes, and splits.
 - `notebooks/H1_Model_Experiments.ipynb` — Runs the H1 Bayesian-network comparisons, walk-forward validation, final 2026 test, and Team A–Team C comparison.
+- `notebooks/H2_Model_Experiments.ipynb` — Runs the H2 logistic regression comparison, walk-forward validation, 2025 final test, and unscored 2026 forecasts for Team A and Team C.
 - `experiment.md` — Describes the M2 model choices, experiment designs, and validation plans.
 - `hypothesis.md` — States the problem, hypotheses, predictions, and planned tests.
 
@@ -59,9 +60,9 @@ Team C has historically been a weak team, but it is now winning 85% of its games
 
 #### Results
 
-- `results/results.md` — M2 results report. H1 results are recorded; H2 has placeholders until its experiment is complete.
+- `results/results.md` — M2 results report. 
 - `results/H1/` — H1 validation scores, predictions, figures, verdict, and exported MLflow run table.
-- `results/H2/` — H2 results and exported MLflow run table, to be added after its experiment is complete.
+- `results/H2/` — H2 validation scores, predictions, forecasts, figures, summary, and exported MLflow run table.
 - `figures/` — Domain-input graph, hypothesis graphs, and exploration figures.
 
 ## AI-Usage
