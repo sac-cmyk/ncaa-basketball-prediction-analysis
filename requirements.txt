@@ -1,0 +1,18 @@
+# Python version used for the project: 3.14.7
+# Install with: pip install -r requirements.txt
+
+# Data preparation and analysis
+numpy==2.5.3
+pandas==3.0.5
+matplotlib>=3.9,<4
+
+# H1 Bayesian-network model
+pgmpy==1.1.2
+
+# H2 logistic-regression model
+scikit-learn==1.9.1
+
+# MLflow tracking and notebook execution
+mlflow==3.18.0
+notebook
+ipykernel

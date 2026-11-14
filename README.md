@@ -69,3 +69,56 @@ Team C has historically been a weak team, but it is now winning 85% of its games
 
 We used AI to help us learn how to work in Jupyter Notebook, clean the datasets, and create visualizations with Matplotlib. We have reviewed the code and results and made the final decisions about the analysis. We also used AI to help us learn how to use MLflow to track model runs and review their results.
 
+## Conclusions and Recommendation
+
+### H1 — Opponent strength
+
+**Verdict: Supported in the predicted direction.** On the same 58 opponent-and-location situations, the opponent-adjusted model estimated Team A’s average win chance at **71.4%** and Team C’s at **51.0%**. Its mean validation Brier score was **0.2013**, compared with **0.2295** for the baseline.
+
+The baseline also favored Team A, so these results do not show that opponent strength alone explains Team C’s higher raw 2026 win rate. The estimates are model predictions, not observed win rates.
+
+### H2 — Preseason rating
+
+**Verdict: Supported.** Adding preseason rating lowered the mean validation Brier score from **0.0632** to **0.0381** across the four validation seasons. The selected model’s Brier score on the held-out 2025 test season was **0.0425**.
+
+The 2026 Team A and Team C probabilities are forecasts. They cannot be checked against tournament results because 2026 tournament outcomes are not available in the data.
+
+### Recommendation
+
+Do not judge a team’s tournament prospects from regular-season win rate alone. Use the model estimates alongside preseason ratings and opponent strength, and treat them as estimates rather than guarantees.
+
+See [`results/results.md`](results/results.md) for the full tables, validation details, predictions, and figures.
+
+## Reproducing the Results
+
+### Environment
+
+- Python version: 3.14.7
+- Install the project packages with `pip install -r requirements.txt`.
+- The prepared model data is in `prepared_data/H1/` and `prepared_data/H2/`.
+
+### Notebook order
+
+To rebuild the results from the original data, run:
+
+1. `notebooks/cleaning.ipynb`
+2. `notebooks/feature_engineering_H1.ipynb` and `notebooks/feature_engineering_H2.ipynb`
+3. `notebooks/H1_Model_Experiments.ipynb`
+4. `notebooks/H2_Model_Experiments.ipynb`
+
+### Selected MLflow models
+
+Open each selected run in the course MLflow server and use its logged model artifact to load the model.
+
+| Hypothesis | Selected model | MLflow run ID |
+|---|---|---|
+| H1 | Opponent-adjusted Bayesian network | **TODO** |
+| H2 | Win-rate-plus-rating logistic regression | **TODO** |
+
+### Monitoring
+
+**Proposed review trigger:** Monitor the H1 model’s Brier score as actual game outcomes become available. Review the model if the score over a completed season exceeds **0.25**; this is above the highest H1 walk-forward validation-season score of **0.2218**.
+
+## MLflow Tracking
+
+Model runs and logged artifacts are sent to the course MLflow server at `http://10.0.100.20:5000`. The exported run tables are committed in `results/H1/` and `results/H2/`. The result files and figures are also saved in the repository; see [`results/results.md`](results/results.md).
