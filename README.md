@@ -85,7 +85,7 @@ The 2026 Team A and Team C probabilities are forecasts. They cannot be checked a
 
 ### Recommendation
 
-Do not judge a team’s tournament prospects from regular-season win rate alone. Use the model estimates alongside preseason ratings and opponent strength, and treat them as estimates rather than guarantees.
+Do not treat Team C as an easy championship favorite based on its 85.7% regular-season win rate alone. Before making a money-related decision, review the opponent-adjusted comparison and the model that combines win rate with preseason rating. These results favor Team A, but the tournament model predicts whether a team wins at least one bracket game, not whether it wins the championship. Because 2026 tournament results are unavailable, our analysis does not justify a championship-level financial decision.
 
 See [`results/results.md`](results/results.md) for the full tables, validation details, predictions, and figures.
 
