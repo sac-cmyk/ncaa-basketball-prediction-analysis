@@ -16,15 +16,19 @@ Its 2026 test Brier score (fit on 2015–2019 and 2021–2025, scored once) is *
 
 ## Team A vs. Team C on shared 2026 situations
 
+The comparison uses `h1_shared_2026_scenarios.csv` (58 situations, one row per team in each, 116 rows). In every situation Team A and Team C have a matching opponent rating group and game location. Team A = team id 1105 and Team C = team id 1120. No game outcomes are used.
+
 | Model | Team A avg chance | Team C avg chance | Difference (A - C) |
 |---|---:|---:|---:|
-| Baseline | 0.6129 | 0.5103 | +0.1026 |
-| Opponent-adjusted | 0.7138 | 0.5102 | +0.2036 |
+| Baseline | 61.3% | 51.0% | +10.3 pts |
+| Opponent-adjusted | 71.4% | 51.0% | +20.4 pts |
 
-Adding opponent strength changed the Team A − Team C difference by +0.1010 (from +0.1026 to +0.2036).
+Adding opponent strength changed the Team A − Team C difference by +10.1 percentage points (from +10.3 to +20.4).
 
 ## Verdict
 
-**Not clearly supported by the opponent adjustment.** Team A is ahead under the opponent-adjusted model, as H1 predicts, but Team A was already ahead under the baseline, so adding opponent strength did not reverse the comparison.
+**H1's prediction was supported.** The opponent-adjusted model estimated Team A at 71.4% and Team C at 51.0% on the shared situations (matching opponent rating group and location), so Team A has the higher estimated chance of winning.
+
+**Limitation:** the baseline model already favored Team A (61.3% vs. 51.0%), so Team A was ahead before opponent strength was added. Including opponent rating group changed the gap from +10.3 to +20.4 percentage points (Team A moved +10.1 points; Team C moved +0.0). We therefore cannot say that opponent strength alone caused the difference between the teams.
 
 *Caveats: results are point estimates with no uncertainty intervals; the 2026 Brier score (accuracy) and the shared-situation comparison answer different questions and should be read separately.*
