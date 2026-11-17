@@ -56,7 +56,7 @@ Team C has historically been a weak team, but it is now winning 85% of its games
 
 #### MLflow tracking
 
-- `mlflow/H{}/mlflow.db` and `mlflow/H{}/mlartifacts/` — Store MLflow run records and logged files. H1 and H2 runs are kept as separate MLflow experiments.
+- `mlflow/` — Contains local MLflow tracking files and artifacts from the project experiments. Selected-model and full-output run IDs on the course MLflow server are listed below under “Selected models and MLflow tracking.”
 
 #### Results
 
@@ -102,23 +102,41 @@ See [`results/results.md`](results/results.md) for the full tables, validation d
 To rebuild the results from the original data, run:
 
 1. `notebooks/cleaning.ipynb`
-2. `notebooks/feature_engineering_H1.ipynb` and `notebooks/feature_engineering_H2.ipynb`
-3. `notebooks/H1_Model_Experiments.ipynb`
-4. `notebooks/H2_Model_Experiments.ipynb`
+2. `notebooks/exploration.ipynb`
+3. `notebooks/feature_engineering_H1.ipynb` and `notebooks/feature_engineering_H2.ipynb`
+4. `notebooks/H1_Model_Experiments.ipynb`
+5. `notebooks/H2_Model_Experiments.ipynb`
 
-### Selected MLflow models
+### Selected models and MLflow tracking
 
-Open each selected run in the course MLflow server and use its logged model artifact to load the model.
+Model runs and artifacts are logged to the course MLflow server:
+http://10.0.100.20:5000
 
-| Hypothesis | Selected model | MLflow run ID |
+| Hypothesis | Selected-model run ID | Full-output bundle run ID |
 |---|---|---|
-| H1 | Opponent-adjusted Bayesian network | **TODO** |
-| H2 | Win-rate-plus-rating logistic regression | **TODO** |
+| H1 | f44c2ab273f84d44b43fedc8e7e80c1e | f340aa9317994fd6ad3fb10bbff042e2 |
+| H2 | cea9f30abd904d0ca758382feef8d2fe | 04e07218145d45ea853ee172c9eccf46 |
+
+The selected-model runs contain the chosen models. The full-output
+bundle runs collect the experiment outputs, including results and figures.
+
+Local model copies are also stored in `models/selected/`:
+
+- `h1_opponent_adjusted_model.pkl` — Saved H1 opponent-adjusted
+  Bayesian network.
+- `h2_win_rate_plus_rating_model.joblib` — Saved H2 logistic
+  regression model using win rate and preseason rating.
+- `model_run_ids.json` — Records the associated MLflow run IDs.
+
+The `.pkl` and `.joblib` files store trained models so they can be
+loaded without retraining. The JSON file records identifiers rather
+than a model.
+
+Results, figures, and exported MLflow run tables are committed in
+`results/H1/` and `results/H2/`. See
+[`results/results.md`](results/results.md) for the full results.
 
 ### Monitoring
 
 **Proposed review trigger:** Monitor the H1 model’s Brier score as actual game outcomes become available. Review the model if the score over a completed season exceeds **0.25**; this is above the highest H1 walk-forward validation-season score of **0.2218**.
 
-## MLflow Tracking
-
-Model runs and logged artifacts are sent to the course MLflow server at `http://10.0.100.20:5000`. The exported run tables are committed in `results/H1/` and `results/H2/`. The result files and figures are also saved in the repository; see [`results/results.md`](results/results.md).
